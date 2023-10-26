@@ -7,7 +7,9 @@ st.link_button("Loja paque menos", "https://mais.app/1Nm5y9")
 a = st.selectbox("Escolha a opção desejada",("Mandar uma mensagem para o Marcao", "Desejar bom dia ao Marcao", "Desejar boa noite ao Marcao"))
 if a == "Mandar uma mensagem para o Marcao":
   nome = st.text_input("Digite seu nome")
-  mensagem = st.text_input("Digite a sua mensagem")
+  prompt = st.chat_input("Say something")
+  if prompt:
+      st.write(f"User has sent the following prompt: {prompt}")
 elif a == "Desejar bom dia ao Marcao":
   st.markdown("BOM DIA, MARCAO")
 elif a ==  "Desejar boa noite ao Marcao":
