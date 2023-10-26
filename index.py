@@ -3,6 +3,7 @@ st.header("Esta é a pagina inicial do Sebo do Marcão")
 st.write("---")
 st.markdown("vamos comecar a trabalhar nisso aqui")
 st.image("IMG_20220616_220024.jpg")
+st.link_button("Loja paque menos", "https://mais.app/1Nm5y9")
 a = st.selectbox("Escolha a opção desejada",("Mandar uma mensagem para o Marcao", "Desejar bom dia ao Marcao", "Desejar boa noite ao Marcao"))
 if a == "Mandar uma mensagem para o Marcao":
   nome = st.text_input("Digite seu nome")
