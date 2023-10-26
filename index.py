@@ -9,7 +9,7 @@ if a == "Mandar uma mensagem para o Marcao":
   nome = st.text_input("Digite seu nome")
   prompt = st.chat_input("Say something")
   if prompt:
-      st.write(f"User has sent the following prompt: {prompt}")
+      st.write(f"{nome}: {prompt}")
 elif a == "Desejar bom dia ao Marcao":
   st.markdown("BOM DIA, MARCAO")
 elif a ==  "Desejar boa noite ao Marcao":
