@@ -2,6 +2,8 @@ import streamlit as st
 st.header("Sebo do Marcão")
 st.write("---")
 st.markdown("Aqui será possivel encontrar coisas com nexo e também totalmente sem nexo")
+st.write("---")
+st.write("Pensamento do dia: SEJA FELIZ HOJE")
 st.image("IMG_20220616_220024.jpg")
 st.link_button("Loja paque menos", "https://mais.app/1Nm5y9")
 st.link_button("Memorando SANEAR", "https://www.sanearmt.com.br")
