@@ -24,5 +24,6 @@ elif a == "Desejar bom dia ao Marcao":
 elif a ==  "Desejar boa noite ao Marcao":
   st.markdown("BOA NOITE, MARCAO")
   st.markdown("Durma com os anjos")
+  st.snow()
   st.write("---")
   
