@@ -1,4 +1,4 @@
-Eimport streamlit as st
+import streamlit as st
 st.header("Sebo do Marcão", divider="orange")
 st.markdown("Aqui será possivel encontrar coisas com nexo e também totalmente sem nexo :sunglasses:")
 st.write("---")
