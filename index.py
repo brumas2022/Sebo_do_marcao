@@ -2,7 +2,7 @@ import streamlit as st
 st.header("Sebo do Marcão", divider="orange")
 st.markdown("Aqui será possivel encontrar coisas com nexo e também totalmente sem nexo :sunglasses:")
 st.write("---")
-st.markdown("Pensamento do dia: ###SEI QUE NADA SEI")
+st.markdown("Pensamento do dia: ###ENQUANTO HOUVER ESPAÇO CORPO TEMPO E ALGUM MODO DE DIZER NÃO, EU CANTO")
 st.write("---")
 st.write("---")
 st.image("IMG_20220616_220024.jpg")
