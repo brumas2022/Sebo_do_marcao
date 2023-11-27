@@ -13,7 +13,7 @@ cols1[0].image("livros-stack-realistic_1284-4735.jpg")
 cols1[1].image("livros-stack-realistic_1284-4735.jpg")
 cols1[2].image("livros-stack-realistic_1284-4735.jpg")
 
-cols2 = st.columns((1,1,1,1,1,1,1,1,1,1))
+cols2 = st.columns((1,1,1,1,1,1,1))
 cols2[0].image("simbolos-musicais-ondulam-em-fundo-branco_1308-77408.jpg")
 cols2[1].image("simbolos-musicais-ondulam-em-fundo-branco_1308-77408.jpg")
 cols2[2].image("simbolos-musicais-ondulam-em-fundo-branco_1308-77408.jpg")
@@ -21,9 +21,7 @@ cols2[3].image("simbolos-musicais-ondulam-em-fundo-branco_1308-77408.jpg")
 cols2[4].image("simbolos-musicais-ondulam-em-fundo-branco_1308-77408.jpg")
 cols2[5].image("simbolos-musicais-ondulam-em-fundo-branco_1308-77408.jpg")
 cols2[6].image("simbolos-musicais-ondulam-em-fundo-branco_1308-77408.jpg")
-cols2[7].image("simbolos-musicais-ondulam-em-fundo-branco_1308-77408.jpg")
-cols2[8].image("simbolos-musicais-ondulam-em-fundo-branco_1308-77408.jpg")
-cols2[9].image("simbolos-musicais-ondulam-em-fundo-branco_1308-77408.jpg")
+
 
                    
                    
