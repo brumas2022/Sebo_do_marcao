@@ -14,8 +14,14 @@ cols[0].link_button("Memorando SANEAR", "https://comunicasanear-avcnrpqesbpzeg2e
 cols[0].link_button("Cadastro de animais", "https://causanimal.streamlit.app", use_container_width=True)
 cols[1].link_button("Video do Youtube", "https://www.youtube.com/watch?v=JnxCIRxt3kQ&t=19s", use_container_width=True)
 cols[1].link_button("Faça sua doação", "https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js", use_container_width=True)
-a = st.selectbox("Escolha a opção desejada",("Mandar uma mensagem para o Marcao", "Desejar bom dia ao Marcao", "Desejar boa noite ao Marcao"))
-if a == "Mandar uma mensagem para o Marcao":
+
+cols1 = st.columns((1,1,1))
+cols1[0].image("IMG_20220616_220024.jpg")
+cols1[1].image("IMG_20220616_220024.jpg")
+cols1[2].image("IMG_20220616_220024.jpg")
+
+a = st.selectbox("Escolha a opção desejada",("Mensagem para o Marcao", "Desejar bom dia ao Marcao", "Desejar boa noite ao Marcao"))
+if a == "Mensagem para o Marcao":
   nome = st.text_input("Digite seu nome")
   prompt = st.chat_input("Say something")
   if prompt:
