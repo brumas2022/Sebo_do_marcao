@@ -2,7 +2,7 @@ import streamlit as st
 st.header("$$\color{blue} Sebo  do  Marcão$$", divider="orange")
 st.markdown("Aqui será possivel encontrar coisas com nexo e também totalmente sem nexo :musical_note:")
 st.write("---")
-st.markdown("Pensamento do dia: TUDO QUE VIER NA CABEÇA EU VOU CANTAR :musical_note:")
+st.markdown("Pensamento do dia: $$\color{green} TUDO QUE VIER NA CABEÇA EU VOU CANTAR$$ :musical_note:")
 st.markdown(":sunglasses:  $$\Gamma$$ $$\Huge Marcos$$:sunglasses:")
 st.write("---")
 st.write("---")
