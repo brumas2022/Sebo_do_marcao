@@ -16,9 +16,9 @@ cols[1].link_button("Video do Youtube", "https://www.youtube.com/watch?v=JnxCIRx
 cols[1].link_button("Faça sua doação", "https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js", use_container_width=True)
 
 cols1 = st.columns((1,1,1))
-cols1[0].image("https://www.google.com/imgres?imgurl=https://img.freepik.com/vetores-gratis/pilha-de-livros-de-design-plano-desenhado-a-mao_23-2149334862.jpg?w%3D2000&imgrefurl=https://br.freepik.com/fotos-vetores-gratis/livros&h=2000&w=2000&tbnid=nlMZ85YVaNd4YM&tbnh=225&tbnw=225&usg=AI4_-kRCyHWxDuAt2tA2LAjcTO-AwFcZ-g&vet=1&docid=0fILTN0CAh0EoM")
-cols1[1].image("IMG_20220616_220024.jpg")
-cols1[2].image("IMG_20220616_220024.jpg")
+cols1[0].image("livros-stack-realistic_1284-4735.jpg")
+cols1[1].image("livros-stack-realistic_1284-4735.jpg")
+cols1[2].image("livros-stack-realistic_1284-4735.jpg")
 
 a = st.selectbox("Escolha a opção desejada",("Mensagem para o Marcao", "Desejar bom dia ao Marcao", "Desejar boa noite ao Marcao"))
 if a == "Mensagem para o Marcao":
