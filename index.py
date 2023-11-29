@@ -1,6 +1,5 @@
 import streamlit as st
-from st_pages import show_pages_from_config
-
+import st_pages
 show_pages_from_config(".streamlit/pages_sections.toml")
 
 
