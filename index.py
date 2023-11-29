@@ -1,8 +1,8 @@
 import streamlit as st
-from st_pages import show_pages_from_config
+#from st_pages import show_pages_from_config
 
 
-show_pages_from_config(".streamlit/pages_sections.toml")
+#show_pages_from_config(".streamlit/pages_sections.toml")
 
 
 st.header(":green[Sebo do Marcão]", divider="orange")
