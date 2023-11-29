@@ -1,4 +1,9 @@
 import streamlit as st
+from st_pages import show_pages_from_config
+
+show_pages_from_config(".streamlit/pages_sections.toml")
+
+
 st.header(":green[Sebo do Marcão]", divider="orange")
 st.markdown("Aqui será possivel encontrar coisas com nexo e também totalmente sem nexo :musical_note:")
 st.write("---")
