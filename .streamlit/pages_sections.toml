@@ -4,7 +4,7 @@ name = "Home"
 icon = ":house:"
 
 [[pages]]
-path = "example_app/example_one.py"
+path = "loja1.py"
 name = "Example One"
 icon = ":books:"
 
@@ -14,12 +14,12 @@ icon = ":pig:"
 is_section = true
 
 [[pages]]
-path = "example_app/example_four.py"
+path = "loja1.py"
 name = "Example Four"
 icon = "📖"
 
 [[pages]]
-path = "example_app/example_two.py"
+path = "loja1.py"
 name = "Example Two"
 icon = "✏️"
 
@@ -29,10 +29,10 @@ icon = ":horse:"
 is_section = true
 
 [[pages]]
-path = "example_app/example_three.py"
+path = "loja1.py"
 
 [[pages]]
-path = "example_app/example_five.py"
+path = "loja1.py"
 name = "Example Five"
 icon = "🧰"
 in_section = false
