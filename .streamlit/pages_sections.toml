@@ -1,5 +1,5 @@
 [[pages]]
-path = "example_app/streamlit_app_sections.py"
+path = "sebo_do_marcao/index.py"
 name = "Home"
 icon = ":house:"
 
