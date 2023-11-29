@@ -14,7 +14,7 @@ icon = ":pig:"
 is_section = true
 
 [[pages]]
-path = "loja1.py"
+path = "loja2.py"
 name = "Example Four"
 icon = "📖"
 
