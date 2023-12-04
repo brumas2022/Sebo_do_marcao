@@ -1,16 +1,16 @@
 [[pages]]
-path = "example_app/streamlit_app.py"
+path = "index.py"
 name = "Home"
 icon = ":house:"
 
 [[pages]]
-path = "example_app/example_one.py"
-name = "Example One"
+path = "loja1.py"
+name = "Cadastro de animais"
 icon = ":books:"
 
 [[pages]]
-path = "example_app/example_four.py"
-name = "Example Four"
+path = "loja2.py"
+name = "Memorando"
 icon = "📖"
 
 [[pages]]
