@@ -9,13 +9,13 @@ name = "Cadastro dos animais"
 icon = ":books:"
 
 [[pages]]
-name = "Memorando do SANEAR"
+name = "SANEAR"
 icon = ":pig:"
 is_section = true
 
 [[pages]]
 path = "loja2.py"
-name = "Example Four"
+name = "Memorando"
 icon = "📖"
 
 [[pages]]
