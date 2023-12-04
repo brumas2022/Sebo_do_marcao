@@ -58,10 +58,10 @@ elif a == "Desejar bom dia ao Marcao":
   st.markdown("BOM DIA, MARCAO")
   st.markdown("Com fé, chegamos la")
   st.balloons()
-  loja1
+  
 elif a ==  "Desejar boa noite ao Marcao":
   st.markdown("BOA NOITE, MARCAO")
-  st.markdown("Durma com os anjos")
+  st.markdown("Espero estar melhor no outro dia....boa noite")
   st.snow()
   st.write("---")
   
