@@ -40,7 +40,7 @@ cols2[6].image("simbolos-musicais-ondulam-em-fundo-branco_1308-77408.jpg")
 
 
 cols = st.columns((1,1))
-cols[0].link_button(":green[Loja paque menos]", "https://mais.app/1Nm5y9", use_container_width=True)
+cols[0].link_button(":red[Loja pague menos]", "https://mais.app/1Nm5y9", use_container_width=True)
 cols[0].link_button("Memorando SANEAR", "https://comunicasanear-avcnrpqesbpzeg2ecsmuun.streamlit.app/", use_container_width=True)
 cols[0].link_button("Cadastro de animais", "https://causanimal.streamlit.app", use_container_width=True)
 cols[1].link_button("Video do Youtube", "https://www.youtube.com/watch?v=JnxCIRxt3kQ&t=19s", use_container_width=True)
