@@ -5,11 +5,11 @@ icon = ":house:"
 
 [[pages]]
 path = "loja1.py"
-name = "Example One"
+name = "Cadastro dos animais"
 icon = ":books:"
 
 [[pages]]
-name = "Cool apps"
+name = "Memorando do SANEAR"
 icon = ":pig:"
 is_section = true
 
