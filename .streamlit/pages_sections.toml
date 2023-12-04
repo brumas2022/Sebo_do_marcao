@@ -3,10 +3,10 @@ path = "index.py"
 name = "Home"
 icon = ":house:"
 
-#[[pages]]
-#path = "loja1.py"
-#name = "Cadastro dos animais"
-#icon = ":books:"
+[[pages]]
+path = "loja1.py"
+name = "Cadastro dos animais"
+icon = ":books:"
 
 [[pages]]
 name = "SANEAR"
