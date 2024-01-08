@@ -18,13 +18,6 @@ if senha == "Raul":
 st.header(":green[Sebo do Marcão]", divider="orange")
 st.markdown("Aqui será possivel encontrar coisas com nexo e também totalmente sem nexo :musical_note:")
 st.write("---")
-st.markdown("Pensamento do dia")
-st.markdown(":violet[Ando devagar porque ja tive pressa]")
-st.markdown(":violet[E levo este sorriso...]")
-st.markdown(":violet[Porque já chorei demais...] :musical_note:")
-st.markdown(":sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:")
-st.write("---")
-st.write("---")
 st.image("IMG_20220616_220024.jpg")
 
 cols1 = st.columns((1,1,1))
