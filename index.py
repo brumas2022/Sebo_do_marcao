@@ -9,16 +9,18 @@ senha = st.sidebar.selectbox(
     ("Raul", "Marx", "Che")
 )
 if senha == "Raul":
-  st.sidebar.markdown(":violet[Ando devagar porque ja tive pressa]")
-  st.sidebar.markdown(":violet[E levo este sorriso...]")
-  st.sidebar.markdown(":violet[Porque já chorei demais...] :musical_note:")
+  st.sidebar.markdown(":violet[Viva a sociedade alternativa!!!]")
+  st.sidebar.markdown(":violet[....]")
+  st.sidebar.markdown(":violet[....] :musical_note:")
   st.sidebar.markdown(":sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:")
 
 if senha=="Marx":
     st.sidebar.markdown(":red[Trabalhadores de todo mundo, UNI-VOS]")
+    st.sidebar.markdown(":sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:")
 
 if senha=="Che":
-    sr.sidebar.markdown(":red[Hasta la victoria siempre]")
+    st.sidebar.markdown(":red[Hasta la victoria siempre]")
+    st.sidebar.markdown(":sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:")
 
 
 st.header(":green[Sebo do Marcão]", divider="orange")
