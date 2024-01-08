@@ -4,6 +4,15 @@ from st_pages import show_pages_from_config, add_page_title
 #add_page_title()
 #show_pages_from_config(".streamlit/pages.toml")
 
+senha = st.sidebar.selectbox(
+    "Escolha um autor para continuar",
+    ("Raul", "Marx", "Lenin")
+)
+if senha == "Raul":
+  st.markdown(":violet[Ando devagar porque ja tive pressa]")
+  st.markdown(":violet[E levo este sorriso...]")
+  st.markdown(":violet[Porque já chorei demais...] :musical_note:")
+  st.markdown(":sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:")
 
 
 st.header(":green[Sebo do Marcão]", divider="orange")
