@@ -17,7 +17,7 @@ if senha == "Raul":
 if senha=="Marx":
     st.sidebar.markdown(":red[Trabalhadores de todo mundo, UNI-VOS]")
 
-if senha=="Lenin":
+if senha=="Che":
     sr.sidebar.markdown(":red[Hasta la victoria siempre]")
 
 
