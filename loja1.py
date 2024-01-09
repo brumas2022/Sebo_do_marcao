@@ -1,5 +1,7 @@
 import streamlit as st
-st.markdown("ESTE É UM TESTE")
+st.markdown("RECANTO DOS USADOS")
 st.image("IMG_20220616_220024.jpg")
+st.markdown("PREÇO : 250,00")
+
 
 
