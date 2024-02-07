@@ -8,7 +8,7 @@ CHAVE_API = "6253633084:AAEDJfuYUyNWydjAJR4dsZUh3vZGmLfSUps"
 bot = telebot.TeleBot(CHAVE_API)
 
 @bot.message_handler(commands=["servico"])
-def servico(mensagem)
+def servico(mensagem):
     bot.reply_to(mensagem, "Este servico ficara disponivel a partir de amanha")
 
 def verificar(mensagem):
