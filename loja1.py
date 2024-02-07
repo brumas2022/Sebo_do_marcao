@@ -13,9 +13,9 @@ def verificar(mensagem):
 @bot.message_handler(func=verificar)
 
 def responder(mensagem):
-    #texto = """
-    #Reservatorios
-    #-----------------------------------------
-    bot.send_message(mensagem.chat.id, "Escolha elevatoria "
+    texto = """
+    Reservatorios
+    -----------------------------------------"""
+    bot.send_message(mensagem.chat.id, "Escolha elevatoria ")
 
 bot.infinity_polling()
