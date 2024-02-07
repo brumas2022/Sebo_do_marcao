@@ -14,6 +14,7 @@ def verificar(mensagem):
 
 def responder(mensagem):
     texto = """
+    /SERVICO
     Reservatorios
     -----------------------------------------"""
     bot.send_message(mensagem.chat.id, "Escolha elevatoria ")
