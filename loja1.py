@@ -7,5 +7,15 @@ CHAVE_API = "6253633084:AAEDJfuYUyNWydjAJR4dsZUh3vZGmLfSUps"
 
 bot = telebot.TeleBot(CHAVE_API)
 
+def verificar(mensagem):
+    return True
 
+@bot.message_handler(func=verificar)
 
+def responder(mensagem):
+    #texto = """
+    #Reservatorios
+    #-----------------------------------------
+    bot.send_message(mensagem.chat.id, "Escolha elevatoria "
+
+bot.infinity_polling()
