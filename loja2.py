@@ -1,4 +1,5 @@
 import streamlit as st
+import telebot 
 nome = st.text_input("Qual é o seu nome?")
 senha = st.text_input("E você sabe qual é a senha?")
 if senha=="1234":
