@@ -23,6 +23,6 @@ def responder(mensagem):
     /caes
     """
     bot.reply_to(mensagem, texto)
-    #bot.send_message(mensagem.chat.id, "Escolha elevatoria ")
+    ##bot.send_message(mensagem.chat.id, "Escolha elevatoria ")
 
 bot.infinity_polling()
