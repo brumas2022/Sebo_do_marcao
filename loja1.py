@@ -18,10 +18,11 @@ def verificar(mensagem):
 
 def responder(mensagem):
     texto = """
-            /servico
-            /mat
-            /caes
-            """
+    /servico
+    /mat
+    /caes
+    /outra opcao"""
+    
     bot.reply_to(mensagem, texto)
     ##bot.send_message(mensagem.chat.id, "Escolha elevatoria ")
 
