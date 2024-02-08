@@ -19,7 +19,7 @@ def verificar(mensagem):
 def responder(mensagem):
     texto = """
     /servico
-    /materiais
+    /mat
     /caes
     """
     bot.reply_to(mensagem, texto)
