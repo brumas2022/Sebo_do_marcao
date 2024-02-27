@@ -12,3 +12,7 @@ bot = telebot.TeleBot(CHAVE_API)
 
 if escolha=="ouvir":
    bot.send_message(820304760, "tente ouvir mais do que falar")
+
+
+if escolha=="voar":
+   bot.send_message(820304760, "dê asas a sua imaginacao")
