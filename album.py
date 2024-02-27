@@ -4,7 +4,7 @@ import telebot
 st.markdown("Album dos caes abrigado na arpaa")
 
 st.markdown("aqui teremos fotos")
-
+escolha=st.selectbox("o que deseja fazer?", ("voar", "sair", "ouvir"))
 
 CHAVE_API = "6369586964:AAFm3QLWBNnLYUwtl2xyqi0145oYJd8OHNc"
 
