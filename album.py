@@ -26,4 +26,14 @@ if escolha=="sair":
    bot.send_message(820304760, "Voce entrou na area de caes. Cuidado!!)
 
 
+
+def verificar(mensagem):
+        return True
+
+@bot.message_handler(func=verificar)
+def responder(mensagem):
+    texto="""/caes"""
+    bot.reply_to(mensagem, texto)
+
+
 bot.infinity_polling()
