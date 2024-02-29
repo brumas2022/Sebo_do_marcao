@@ -15,7 +15,7 @@ if escolha=="ouvir":
 
 
 if escolha=="voar":
-   bot.send_message(820304760, "dê asas a sua imaginacao")
+   bot.send_message(820304760, "nao pense nisso")
 
 if escolha=="sair":
    oi = st.text_input("digite")
