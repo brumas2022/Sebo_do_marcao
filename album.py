@@ -20,3 +20,5 @@ if escolha=="voar":
 if escolha=="sair":
    oi = st.text_input("digite")
    bot.send_message(820304760, oi)
+
+bot.infinity_polling()
