@@ -21,4 +21,9 @@ if escolha=="sair":
    oi = st.text_input("digite")
    bot.send_message(820304760, oi)
 
+
+@bot.message_handler(commands=["caes"])
+   bot.send_message(820304760, "Voce entrou na area de caes. Cuidado!!)
+
+
 bot.infinity_polling()
