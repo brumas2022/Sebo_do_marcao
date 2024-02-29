@@ -24,7 +24,7 @@ if escolha=="sair":
 
 @bot.message_handler(commands=["caes"])
 def caes(mensagem):
-   bot.send_message(820304760, "Voce entrou na area de caes. Cuidado!!)
+   bot.send_message(820304760, "Voce entrou na area de caes. Cuidado!!")
 
 
 
