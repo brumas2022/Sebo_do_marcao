@@ -34,7 +34,8 @@ def gatos(mensagem):
 
 @bot.message_handler(commands=["lembretes"])
 def lembretes(mensagem):
-   bot.send_message(820304760, "Voce entrou na area de caes. Cuidado!!")
+   
+   bot.send_message(820304760, "Voce precisa comprar carne para o almoco")
 
 def verificar(mensagem):
         return True
