@@ -27,13 +27,23 @@ def caes(mensagem):
    bot.send_message(820304760, "Voce entrou na area de caes. Cuidado!!")
 
 
+@bot.message_handler(commands=["gatos"])
+def gatos(mensagem):
+   bot.send_message(820304760, "Eu acho que eu vi um gatinho!!")
+
+
+@bot.message_handler(commands=["lembretes"])
+def lembretes(mensagem):
+   bot.send_message(820304760, "Voce entrou na area de caes. Cuidado!!")
 
 def verificar(mensagem):
         return True
 
 @bot.message_handler(func=verificar)
 def responder(mensagem):
-    texto="""/caes"""
+    texto="""/caes
+             /gatos
+             /lembretes"""
     bot.reply_to(mensagem, texto)
 
 
