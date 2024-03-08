@@ -24,18 +24,18 @@ if escolha=="sair":
 
 @bot.message_handler(commands=["caes"])
 def caes(mensagem):
-   bot.send_message(820304760, "Voce entrou na area de caes. Cuidado!!")
+   bot.send_message(820304760, "Hoje temos 64 caes, sendo 34 machos e 30 femeas")
 
 
 @bot.message_handler(commands=["gatos"])
 def gatos(mensagem):
-   bot.send_message(820304760, "Eu acho que eu vi um gatinho!!")
+   bot.send_message(820304760, "Temos cerca de 35 gatos atualmente. Todos estao castrados")
 
 
 @bot.message_handler(commands=["lembretes"])
 def lembretes(mensagem):
    
-   bot.send_message(820304760, "Voce precisa comprar carne para o almoco")
+   bot.send_message(820304760, "As proximas a serem castradas deve ser Lucinha, Fiona ou Estiolada")
 
 def verificar(mensagem):
         return True
