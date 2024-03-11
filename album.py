@@ -40,7 +40,7 @@ def exibir(mensagem):
     ##st.markdown(":dog2: O numero de machos é : "+str(len(resultado)))
 
         
-@bot.message_handler(commands=["doacao"])
+@bot.message_handler(commands=["adocao"])
 def doacao(mensagem):
     bot.send_message(820304760, "Hoje temos 08 filhotes para doar") 
     
