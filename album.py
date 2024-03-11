@@ -63,8 +63,7 @@ def lembretes(mensagem):
    
 
    
-   bot.send_message(820304760, "As proximas a serem castradas deve ser Lucinha, Fiona ou Estiolada/
-                                 Branquinha, Latoia, Pitoca e Boca")
+   bot.send_message(820304760, "As proximas a serem castradas deve ser Lucinha, Fiona ou Estiolada")
   
 
 
