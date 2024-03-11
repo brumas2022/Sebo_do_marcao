@@ -24,20 +24,20 @@ if escolha=="sair":
 
 @bot.message_handler(commands=["exibir"])
 def exibir(mensagem):
-      connection = psycopg2.connect(
+    connection = psycopg2.connect(
                    host='aws-0-sa-east-1.pooler.supabase.com',
                    user='postgres.ibhcxtnwnonsnycfgjay',
                    password='Hoje#estamos#firmes#como#geleia',
                    database='postgres',
                    port='5432'
                    
-       )
-       cursor = connection.cursor()
+    )
+    cursor = connection.cursor()
               
-       comando = f"""SELECT * FROM caninos WHERE genero='macho' and vivo=True"""
-       cursor.execute(comando)
-       resultado = cursor.fetchall()
-       ##st.markdown(":dog2: O numero de machos é : "+str(len(resultado)))
+    comando = f"""SELECT * FROM caninos WHERE genero='macho' and vivo=True"""
+    cursor.execute(comando)
+    resultado = cursor.fetchall()
+    ##st.markdown(":dog2: O numero de machos é : "+str(len(resultado)))
 
         
 @bot.message_handler(commands=["doacao"])
