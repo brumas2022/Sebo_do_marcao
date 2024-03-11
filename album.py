@@ -22,7 +22,7 @@ if escolha=="sair":
    bot.send_message(820304760, oi)
 
 
-@bot.message_handler(commands=["exibir'])
+@bot.message_handler(commands=["exibir"])
 def exibir(mensagem):
       connection = psycopg2.connect(
                    host='aws-0-sa-east-1.pooler.supabase.com',
