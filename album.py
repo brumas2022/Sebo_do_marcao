@@ -21,6 +21,13 @@ if escolha=="sair":
    oi = st.text_input("digite")
    bot.send_message(820304760, oi)
 
+@bot.message_handler(commands=["doacao"])
+def doacao(mensagem):
+    bot.send_message(820304760, "Hoje temos 08 filhotes para doar") 
+    
+@bot.message_handler(commands=["como_ajudar"])
+def como_ajudar(mensagem):
+    bot.send_message(820304760, "Atraves do PIX 66992097580 você pode ajudar estes animaiszinhos")
 
 @bot.message_handler(commands=["caes"])
 def caes(mensagem):
@@ -48,8 +55,10 @@ def verificar(mensagem):
 @bot.message_handler(func=verificar)
 def responder(mensagem):
     texto="""/caes
-             /gatos
-             /lembretes"""
+          /gatos
+          /lembretes
+          /como_ajudar
+          /adocao"""
     bot.reply_to(mensagem, texto)
 
 
