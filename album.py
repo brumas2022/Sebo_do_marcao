@@ -37,7 +37,7 @@ def exibir(mensagem):
     comando = f"""SELECT * FROM caninos WHERE genero='macho' and vivo=True"""
     cursor.execute(comando)
     resultado = cursor.fetchall()
-    ##st.markdown(":dog2: O numero de machos é : "+str(len(resultado)))
+    st.markdown(":dog2: O numero de machos é : "+str(len(resultado)))
 
         
 @bot.message_handler(commands=["adocao"])
