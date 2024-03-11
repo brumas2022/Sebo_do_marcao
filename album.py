@@ -35,8 +35,11 @@ def gatos(mensagem):
 @bot.message_handler(commands=["lembretes"])
 def lembretes(mensagem):
    
-   bot.send_message(820304760, "As proximas a serem castradas deve ser Lucinha, Fiona ou Estiolada")
-   bot.send_message(820304760, "Tem ainda a Branquinha, Latoia, Pitoca, Boca e Menininha")
+
+   
+   bot.send_message(820304760, "As proximas a serem castradas deve ser Lucinha, Fiona ou Estiolada/
+                                 Branquinha, Latoia, Pitoca e Boca")
+  
 
 
 def verificar(mensagem):
