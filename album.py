@@ -1,5 +1,6 @@
 import streamlit as st
 import telebot 
+import psycopg2
 
 st.markdown("Album dos caes abrigado na arpaa")
 
