@@ -21,6 +21,25 @@ if escolha=="sair":
    oi = st.text_input("digite")
    bot.send_message(820304760, oi)
 
+
+@bot.message_handler(commands=["exibir'])
+def exibir(mensagem):
+      connection = psycopg2.connect(
+                   host='aws-0-sa-east-1.pooler.supabase.com',
+                   user='postgres.ibhcxtnwnonsnycfgjay',
+                   password='Hoje#estamos#firmes#como#geleia',
+                   database='postgres',
+                   port='5432'
+                   
+        )
+        cursor = connection.cursor()
+              
+        comando = f"""SELECT * FROM caninos WHERE genero='macho' and vivo=True"""
+        cursor.execute(comando)
+        resultado = cursor.fetchall()
+        st.markdown(":dog2: O numero de machos é : "+str(len(resultado)))
+
+        
 @bot.message_handler(commands=["doacao"])
 def doacao(mensagem):
     bot.send_message(820304760, "Hoje temos 08 filhotes para doar") 
@@ -58,7 +77,8 @@ def responder(mensagem):
           /gatos
           /lembretes
           /como_ajudar
-          /adocao"""
+          /adocao
+          /exibir"""
     bot.reply_to(mensagem, texto)
 
 
