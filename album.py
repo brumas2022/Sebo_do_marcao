@@ -39,7 +39,7 @@ def exibir(mensagem):
     cursor.execute(comando)
     resultado = cursor.fetchall()
     ##st.markdown(":dog2: O numero de machos é : "+str(len(resultado)))
-    bot.send_message(820304760, resultado[1])
+    bot.send_message(820304760, resultado[0])
 
         
 @bot.message_handler(commands=["adocao"])
