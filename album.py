@@ -23,7 +23,7 @@ if escolha=="sair":
    bot.send_message(820304760, oi)
 
 
-@bot.message_handler(commands=["exibir"])
+##@bot.message_handler(commands=["exibir"])
 def exibir(mensagem):
    try:
     connection = psycopg2.connect(
@@ -83,7 +83,7 @@ def responder(mensagem):
           /lembretes
           /como_ajudar
           /adocao
-          /exibir"""
+          /exi"""
     bot.reply_to(mensagem, texto)
 
 
