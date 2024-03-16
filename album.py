@@ -24,26 +24,26 @@ if escolha=="sair":
 
 
 ##@bot.message_handler(commands=["exibir"])
-def exibir(mensagem):
-   try:
-    connection = psycopg2.connect(
-                   host='aws-0-sa-east-1.pooler.supabase.com',
-                   user='postgres.ibhcxtnwnonsnycfgjay',
-                   password='Hoje#estamos#firmes#como#geleia',
-                   database='postgres',
-                   port='5432'
+#def exibir(mensagem):
+#   try:
+#    connection = psycopg2.connect(
+#                   host='aws-0-sa-east-1.pooler.supabase.com',
+#                   user='postgres.ibhcxtnwnonsnycfgjay',
+#                   password='Hoje#estamos#firmes#como#geleia',
+#                   database='postgres',
+#                   port='5432'
                    
-    )
-    cursor = connection.cursor()
+#    )
+#    cursor = connection.cursor()
               
-    comando = f"""SELECT * FROM caninos WHERE genero='macho' and vivo=True"""
-    cursor.execute(comando)
-    resultado = cursor.fetchall()
-    st.write(resultado)
-    ##st.markdown(":dog2: O numero de machos é : "+str(len(resultado)))
-    bot.send_message(820304760, resultado)
-   except Exception as ex
-    bot.send_message(mensagem.chat.id, ex)
+#    comando = f"""SELECT * FROM caninos WHERE genero='macho' and vivo=True"""
+#    cursor.execute(comando)
+#    resultado = cursor.fetchall()
+#    st.write(resultado)
+#    ##st.markdown(":dog2: O numero de machos é : "+str(len(resultado)))
+#    bot.send_message(820304760, resultado)
+#   except Exception as ex
+#    bot.send_message(mensagem.chat.id, ex)
         
 @bot.message_handler(commands=["adocao"])
 def adocao(mensagem):
