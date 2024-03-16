@@ -48,6 +48,7 @@ def exibir(mensagem):
 @bot.message_handler(commands=["adocao"])
 def doacao(mensagem):
     bot.send_message(820304760, "Hoje temos 08 filhotes para doar") 
+    bot.send_image(820304760,"zeroum.jpg")
     
 @bot.message_handler(commands=["como_ajudar"])
 def como_ajudar(mensagem):
