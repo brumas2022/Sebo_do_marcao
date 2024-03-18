@@ -78,7 +78,8 @@ def verificar(mensagem):
 
 @bot.message_handler(func=verificar)
 def responder(mensagem):
-    texto="""/caes
+    texto="""Escolha uma das opçoes:
+          /caes
           /gatos
           /lembretes
           /como_ajudar
