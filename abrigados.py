@@ -15,5 +15,5 @@ st.dataframe(df)
 st.dataframe(df['foto'])
 
 col1, col2, col3, col4 = st.columns((1,1,1,1))
-col1.image(df['foto'][2], use_column_width="Auto")
+col1.image(df['foto'][2], use_column_width="always")
 col2.image(df['foto'][3])
