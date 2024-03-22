@@ -13,4 +13,7 @@ sql = "SELECT * FROM caninos"
 df = pd.read_sql_query(sql, con=engine)
 st.dataframe(df)
 st.dataframe(df['foto'])
-st.image(df['foto'][2])
+
+col1, col2, col3, col4 = st.columns((1,1,1,1))
+col1.image(df['foto'][2], use_column_width="Auto")
+col2.image(df['foto'][3])
