@@ -13,4 +13,4 @@ sql = "SELECT * FROM caninos"
 df = pd.read_sql_query(sql, con=engine)
 st.dataframe(df)
 st.dataframe(df['foto'])
-st.image(df['foto'])
+st.image(df['foto'][2])
