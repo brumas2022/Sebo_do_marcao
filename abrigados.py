@@ -12,4 +12,5 @@ engine = create_engine('postgresql://postgres.ibhcxtnwnonsnycfgjay:Hoje#estamos#
 sql = "SELECT * FROM caninos"
 df = pd.read_sql_query(sql, con=engine)
 st.dataframe(df)
-st.dataframe(df['nome','foto'])
+st.dataframe(df['foto'])
+st.image(df['foto])
