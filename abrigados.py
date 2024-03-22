@@ -19,3 +19,9 @@ col1.image(df['foto'][5], caption=df['nome'][5], use_column_width="always")
 col2.image(df['foto'][2], caption=df['nome'][2], use_column_width="always")
 col3.image(df['foto'][11], caption=df['nome'][11], use_column_width="always")
 col4.image(df['foto'][12], caption=df['nome'][12], use_column_width="always")
+
+col1.image(df['foto'][50], caption=df['nome'][50], use_column_width="always")
+col2.image(df['foto'][51], caption=df['nome'][51], use_column_width="always")
+col3.image(df['foto'][52], caption=df['nome'][52], use_column_width="always")
+col4.image(df['foto'][53], caption=df['nome'][53], use_column_width="always")
+
