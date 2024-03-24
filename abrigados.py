@@ -17,7 +17,7 @@ st.dataframe(df['foto'])
 col1, col2, col3, col4 = st.columns((1,1,1,1))
 col1.image(df['foto'][33], caption=df['nome'][33], use_column_width="always")
 col2.image(df['foto'][2], caption=df['nome'][2], use_column_width="always")
-col3.image(df['foto'][11], caption=df['nome'][11], use_column_width="always")
+col3.image(df['foto'][12], caption=df['nome'][12], use_column_width="always")
 col4.image(df['foto'][12], caption=df['nome'][12], use_column_width="always")
 
 col1.image(df['foto'][50], caption=df['nome'][50], use_column_width="always")
