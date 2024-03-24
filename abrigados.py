@@ -25,3 +25,6 @@ col2.image(df['foto'][51], caption=df['nome'][51], use_column_width="always")
 col3.image(df['foto'][52], caption=df['nome'][52], use_column_width="always")
 col4.image(df['foto'][53], caption=df['nome'][53], use_column_width="always")
 
+col4.image(df['foto'][54], caption=df['nome'][54], use_column_width="always")
+
+
