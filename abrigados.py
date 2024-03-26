@@ -11,7 +11,8 @@ engine = create_engine('postgresql://postgres.ibhcxtnwnonsnycfgjay:Hoje#estamos#
 #engine = create_engine('postgresql://postgres:Lula#2022@localhost:5432/postgres')
 sql = "SELECT * FROM caninos"
 df = pd.read_sql_query(sql, con=engine)
-st.dataframe(df.sort_values['id'])
+#df1 = df.sort_values
+st.dataframe(df.sort_values('id'))
 st.dataframe(df['foto'])
 
 col1, col2, col3, col4 = st.columns((1,1,1,1))
