@@ -12,7 +12,7 @@ engine = create_engine('postgresql://postgres.ibhcxtnwnonsnycfgjay:Hoje#estamos#
 sql = "SELECT * FROM caninos"
 df = pd.read_sql_query(sql, con=engine)
 #df1 = df.sort_values
-st.dataframe(df.sort_values('id'))
+st.dataframe(df)
 st.dataframe(df['foto'])
 
 col1, col2, col3, col4 = st.columns((1,1,1,1))
