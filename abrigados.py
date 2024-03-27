@@ -12,6 +12,9 @@ engine = create_engine('postgresql://postgres.ibhcxtnwnonsnycfgjay:Hoje#estamos#
 sql = "SELECT * FROM caninos"
 df = pd.read_sql_query(sql, con=engine)
 #df1 = df.sort_values
+
+st.sidebar.radio("ESCOLHA A OPCAO DESEJADA  :", ("TABELA COMPLETA", "TABELA COM FOTO", "MURAL DE FOTOS"))
+                 
 st.dataframe(df)
 colunas = ['id','nome','foto']
 resultado = df.loc[:,colunas]
