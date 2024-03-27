@@ -13,7 +13,7 @@ sql = "SELECT * FROM caninos"
 df = pd.read_sql_query(sql, con=engine)
 #df1 = df.sort_values
 st.dataframe(df)
-st.dataframe(df['foto'])
+st.dataframe(df[['id','foto'])
 
 col1, col2, col3, col4 = st.columns((1,1,1,1))
 col1.image(df['foto'][33], caption=df['nome'][33], use_column_width="always")
