@@ -13,7 +13,7 @@ sql = "SELECT * FROM caninos"
 df = pd.read_sql_query(sql, con=engine)
 #df1 = df.sort_values
 st.dataframe(df)
-colunas = ['id','nome','foto']]
+colunas = ['id','nome','foto']
 resultado = df.loc[:,colunas]
 st.data_editor(resultado,column_config={"foto": st.column_config.ImageColumn("Preview Image", help="Streamlit app preview screenshots")}, hide_index=True,)
 
