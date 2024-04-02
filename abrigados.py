@@ -22,6 +22,15 @@ if escolha=="TABELA COM FOTO":
    resultado = df.loc[:,colunas]
    st.data_editor(resultado,column_config={"foto": st.column_config.ImageColumn("Preview Image", help="Streamlit app preview screenshots")}, hide_index=True,)
 if escolha=="MURAL DE FOTOS":
+
+   from supabase import create_client, Client
+   #url: str = os.environ.get("https://ibhcxtnwnonsnycfgjay.supabase.co")
+   #key: str = os.environ.get("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImliaGN4dG53bm9uc255Y2ZnamF5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTUxNTM5NjIsImV4cCI6MjAxMDcyOTk2Mn0.PYLOei6RiMbucEqUmTtnmkcjDfIptsiTcNrUCmrBH7c")
+   supabase: Client = create_client('https://ibhcxtnwnonsnycfgjay.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImliaGN4dG53bm9uc255Y2ZnamF5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTUxNTM5NjIsImV4cCI6MjAxMDcyOTk2Mn0.PYLOei6RiMbucEqUmTtnmkcjDfIptsiTcNrUCmrBH7c')
+
+   resposta = supabase.table("caninos").select("nome").execute()
+   st.write(resposta)
+   
   
    col1, col2, col3, col4 = st.columns((1,1,1,1))
    col1.image(df['foto'][33], caption=df['nome'][33], use_column_width="always")
