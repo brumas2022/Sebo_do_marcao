@@ -34,6 +34,7 @@ if escolha=="MURAL DE FOTOS":
    st.write(resposta.data[2]["nome"])
    st.write(resposta.data[3]["nome"])
    #st.image(resposta.data[3]["foto"]) # deu certo magrelo
+   st.write(row)
 
    res = supabase.storage.list_buckets()
    st.write(res.data)
