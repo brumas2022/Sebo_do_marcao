@@ -32,7 +32,7 @@ if escolha=="MURAL DE FOTOS":
    st.write(resposta.data[1]["nome"])
    #st.image(resposta.data[1]["foto"])
    st.write(resposta.data[2]["nome"])
-   st.write(resposta.data[3]["nome'])
+   st.write(resposta.data[3]["nome"])
    
   
    col1, col2, col3, col4 = st.columns((1,1,1,1))
