@@ -29,7 +29,7 @@ if escolha=="MURAL DE FOTOS":
    supabase: Client = create_client('https://ibhcxtnwnonsnycfgjay.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImliaGN4dG53bm9uc255Y2ZnamF5Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY5NTE1Mzk2MiwiZXhwIjoyMDEwNzI5OTYyfQ.W9t9sqi_odq3kV2WovKCVfMXcFGprFOgai9Us9_rTQA')
 
    resposta = supabase.table("caninos").select("*").execute()
-   st.write(resposta['nome'])
+   st.write(resposta.data)
    
   
    col1, col2, col3, col4 = st.columns((1,1,1,1))
