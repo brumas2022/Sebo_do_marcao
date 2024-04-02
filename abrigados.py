@@ -34,11 +34,11 @@ if escolha=="MURAL DE FOTOS":
    st.write(resposta.data[2]["nome"])
    st.write(resposta.data[3]["nome"])
    #st.image(resposta.data[3]["foto"]) # deu certo magrelo
-   st.write(row)
+   
 
    res = supabase.storage.list_buckets()
-   st.write(res.data)
-   st.write(row)
+   st.write(res.row)
+   
   
    col1, col2, col3, col4 = st.columns((1,1,1,1))
    col1.image(df['foto'][33], caption=df['nome'][33], use_column_width="always")
