@@ -32,11 +32,11 @@ if escolha=="MURAL DE FOTOS":
 
    c1, c2, c3, c4 = st.columns((1,1,1,1))
    c1.write(resposta.data[1]["nome"])
-   #st.image(resposta.data[1]["foto"], use_columns_width="always")
+   #st.image(resposta.data[1]["foto"], use_column_width="always")
    c2.write(resposta.data[2]["nome"])
-   c2.image(resposta.data[2]["foto"], use_columns_width="always")
+   c2.image(resposta.data[2]["foto"], use_column_width="always")
    c3.write(resposta.data[3]["nome"])
-   c3st.image(resposta.data[3]["foto"], use_columns_width="always") # deu certo magrelo
+   c3st.image(resposta.data[3]["foto"], use_column_width="always") # deu certo magrelo
    
 
    res = supabase.storage.list_buckets()
