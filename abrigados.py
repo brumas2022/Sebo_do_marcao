@@ -32,6 +32,7 @@ if escolha=="MURAL DE FOTOS":
    st.write(resposta.data[1]["nome"])
    #st.image(resposta.data[1]["foto"])
    st.write(resposta.data[2]["nome"])
+   st.image(resposta.data[2]["foto"])
    st.write(resposta.data[3]["nome"])
    #st.image(resposta.data[3]["foto"]) # deu certo magrelo
    
