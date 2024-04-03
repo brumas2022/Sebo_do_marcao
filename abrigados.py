@@ -13,7 +13,7 @@ sql = "SELECT * FROM caninos"
 df = pd.read_sql_query(sql, con=engine)
 lista = ["TABELA COMPLETA","TABELA COM FOTO", "MURAL DE FOTOS"]
 
-escolha = st.sidebar.radio("ESCOLHA A OPCAO DESEJADA  :", ("TABELA COMPLETA", "TABELA COM FOTO", "MURAL DE FOTOS"))
+escolha = st.sidebar.radio("ESCOLHA A OPCAO DESEJADA  :", lista)
 
 if escolha=="TABELA COMPLETA":
    st.dataframe(df)
