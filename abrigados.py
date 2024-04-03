@@ -36,7 +36,7 @@ if escolha=="MURAL DE FOTOS":
    c2.write(resposta.data[2]["nome"])
    c2.image(resposta.data[2]["foto"], use_column_width="always")
    c3.write(resposta.data[3]["nome"])
-   c3st.image(resposta.data[3]["foto"], use_column_width="always") # deu certo magrelo
+   c3.image(resposta.data[3]["foto"], use_column_width="always") # deu certo magrelo
    
 
    res = supabase.storage.list_buckets()
