@@ -29,12 +29,14 @@ if escolha=="MURAL DE FOTOS":
    supabase: Client = create_client('https://ibhcxtnwnonsnycfgjay.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImliaGN4dG53bm9uc255Y2ZnamF5Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY5NTE1Mzk2MiwiZXhwIjoyMDEwNzI5OTYyfQ.W9t9sqi_odq3kV2WovKCVfMXcFGprFOgai9Us9_rTQA')
 
    resposta = supabase.table("caninos").select("*").execute()
-   st.write(resposta.data[1]["nome"])
-   #st.image(resposta.data[1]["foto"])
-   st.write(resposta.data[2]["nome"])
-   st.image(resposta.data[2]["foto"])
-   st.write(resposta.data[3]["nome"])
-   #st.image(resposta.data[3]["foto"]) # deu certo magrelo
+
+   c1, c2, c3, c4 = st.columns((1,1,1,1))
+   c1.write(resposta.data[1]["nome"])
+   #st.image(resposta.data[1]["foto"], use_columns_width="always")
+   c2.write(resposta.data[2]["nome"])
+   c2.image(resposta.data[2]["foto"], use_columns_width="always")
+   c3.write(resposta.data[3]["nome"])
+   c3st.image(resposta.data[3]["foto"], use_columns_width="always") # deu certo magrelo
    
 
    res = supabase.storage.list_buckets()
