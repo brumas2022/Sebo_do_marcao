@@ -22,6 +22,8 @@ if escolha=="TABELA COM FOTO":
    colunas = ['id','nome','foto']
    resultado = df.loc[:,colunas]
    st.data_editor(resultado,column_config={"foto": st.column_config.ImageColumn("Preview Image", help="Streamlit app preview screenshots")}, hide_index=True,)
+   df_filtro = df[df["foto"]!=" "]
+   st.dataframe(df_filtro)
 if escolha=="MURAL DE FOTOS":
 
    from supabase import create_client, Client
@@ -31,6 +33,7 @@ if escolha=="MURAL DE FOTOS":
 
    resposta = supabase.table("caninos").select("*").execute()
 
+   
    c1, c2, c3, c4 = st.columns((1,1,1,1))
    c1.write(resposta.data[11]["nome"])
    c1.image(resposta.data[11]["foto"], use_column_width="always")
@@ -81,7 +84,9 @@ if escolha=="MURAL DE FOTOS":
 
    #res = supabase.storage.list_buckets()
    #st.write(res.row)
+
    
+
   
    #col1, col2, col3, col4 = st.columns((1,1,1,1))
    #3col1.image(df['foto'][33], caption=df['nome'][33], use_column_width="always")
