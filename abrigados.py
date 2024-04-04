@@ -23,7 +23,7 @@ if escolha=="TABELA COM FOTO":
    resultado = df.loc[:,colunas]
    st.data_editor(resultado,column_config={"foto": st.column_config.ImageColumn("Preview Image", help="Streamlit app preview screenshots")}, hide_index=True,)
    df_filtro = df[df["foto"]!=""]
-   st.dataframe(df_filtro)
+   st.dataframe(df_filtro.set_index('id', inplace=True))
 if escolha=="MURAL DE FOTOS":
 
    from supabase import create_client, Client
