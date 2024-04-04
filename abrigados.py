@@ -25,7 +25,11 @@ if escolha=="TABELA COM FOTO":
    df_filtro = df[df["foto"]!=""]
    df_filtro = df_filtro.set_index('id')
    st.dataframe(df_filtro)
-
+   col1, col2, col3, col4 = st.columns((1,1,1,1))
+   col1.image(df_filtro['foto'][54], caption=df_filtro['nome'][54], use_column_width="always")
+   col2.image(df_filtro['foto'][32], caption=df_filtro['nome'][32], use_column_width="always")
+   col3.image(df_filtro['foto'][51], caption=df_filtro['nome'][51], use_column_width="always")
+   col4.image(df_filtro['foto'][41], caption=ddf_filtrof['nome'][41], use_column_width="always")
    
 
 if escolha=="MURAL DE FOTOS":
