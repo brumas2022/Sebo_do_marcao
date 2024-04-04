@@ -40,6 +40,8 @@ if escolha=="MURAL DE FOTOS":
    c4.write(resposta.data[57]["nome"])
    c4.image(resposta.data[57]["foto"], use_column_width="always") # deu certo magrelo
 
+   c4.write(resposta.data[5]["nome"])
+   c4.image(resposta.data[5]["foto"], use_column_width="always"
    res = supabase.storage.list_buckets()
    st.write(res.row)
    
