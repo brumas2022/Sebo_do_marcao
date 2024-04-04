@@ -23,6 +23,7 @@ if escolha=="TABELA COM FOTO":
    resultado = df.loc[:,colunas]
    st.data_editor(resultado,column_config={"foto": st.column_config.ImageColumn("Preview Image", help="Streamlit app preview screenshots")}, hide_index=True,)
    df_filtro = df[df["foto"]!=""]
+   df_filtro - df_filtro.set_index('id')
    st.dataframe(df_filtro)
 
    
