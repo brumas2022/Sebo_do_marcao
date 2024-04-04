@@ -16,7 +16,8 @@ lista = ["TABELA COMPLETA","TABELA COM FOTO", "MURAL DE FOTOS"]
 escolha = st.sidebar.radio("ESCOLHA A OPCAO DESEJADA  :", lista)
 
 if escolha=="TABELA COMPLETA":
-   st.dataframe(df)
+   coluna = ['nome', 'foto']
+   st.dataframe(df.loc[:, coluna])
 if escolha=="TABELA COM FOTO":
    colunas = ['id','nome','foto']
    resultado = df.loc[:,colunas]
