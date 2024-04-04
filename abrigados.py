@@ -31,8 +31,8 @@ if escolha=="MURAL DE FOTOS":
    resposta = supabase.table("caninos").select("*").execute()
 
    c1, c2, c3, c4 = st.columns((1,1,1,1))
-   c1.write(resposta.data[1]["nome"])
-   #st.image(resposta.data[1]["foto"], use_column_width="always")
+   c1.write(resposta.data[11]["nome"])
+   #st.image(resposta.data[11]["foto"], use_column_width="always")
    c2.write(resposta.data[2]["nome"])
    c2.image(resposta.data[2]["foto"], use_column_width="always")
    c3.write(resposta.data[3]["nome"])
@@ -40,8 +40,10 @@ if escolha=="MURAL DE FOTOS":
    c4.write(resposta.data[57]["nome"])
    c4.image(resposta.data[57]["foto"], use_column_width="always") # deu certo magrelo
 
-   c4.write(resposta.data[5]["nome"])
-   c4.image(resposta.data[5]["foto"], use_column_width="always")
+   c1.write(resposta.data[5]["nome"])
+   c1.image(resposta.data[5]["foto"], use_column_width="always")
+   c2.write(resposta.data[6]["nome"])
+   c2.image(resposta.data[6]["foto"], use_column_width="always")
    res = supabase.storage.list_buckets()
    st.write(res.row)
    
