@@ -50,6 +50,14 @@ if escolha=="MURAL DE FOTOS":
    c4.write(resposta.data[12]["nome"])
    c4.image(resposta.data[12]["foto"], use_column_width="always")
 
+   c1.write(resposta.data[14]["nome"])
+   c1.image(resposta.data[14]["foto"], use_column_width="always")
+   c2.write(resposta.data[15]["nome"])
+   c2.image(resposta.data[15]["foto"], use_column_width="always")
+   c3.write(resposta.data[23]["nome"])
+   c3.image(resposta.data[23]["foto"], use_column_width="always")
+   c4.write(resposta.data[28]["nome"])
+   c4.image(resposta.data[28]["foto"], use_column_width="always")
 
 
 
