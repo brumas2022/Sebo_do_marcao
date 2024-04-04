@@ -45,22 +45,33 @@ if escolha=="MURAL DE FOTOS":
    c1.image(resposta.data[5]["foto"], use_column_width="always")
    c2.write(resposta.data[6]["nome"])
    c2.image(resposta.data[6]["foto"], use_column_width="always")
-   res = supabase.storage.list_buckets()
-   st.write(res.row)
+   c3.write(resposta.data[7]["nome"])
+   c3.image(resposta.data[7]["foto"], use_column_width="always")
+   c4.write(resposta.data[12]["nome"])
+   c4.image(resposta.data[12]["foto"], use_column_width="always")
+
+
+
+
+
+
+
+   #res = supabase.storage.list_buckets()
+   #st.write(res.row)
    
   
-   col1, col2, col3, col4 = st.columns((1,1,1,1))
-   col1.image(df['foto'][33], caption=df['nome'][33], use_column_width="always")
-   col2.image(df['foto'][2], caption=df['nome'][2], use_column_width="always")
-   col3.image(df['foto'][12], caption=df['nome'][12], use_column_width="always")
-   col4.image(df['foto'][6], caption=df['nome'][6], use_column_width="always")
+   #col1, col2, col3, col4 = st.columns((1,1,1,1))
+   #3col1.image(df['foto'][33], caption=df['nome'][33], use_column_width="always")
+   #col2.image(df['foto'][2], caption=df['nome'][2], use_column_width="always")
+   #col3.image(df['foto'][12], caption=df['nome'][12], use_column_width="always")
+   #col4.image(df['foto'][6], caption=df['nome'][6], use_column_width="always")
     
-   col1.image(df['foto'][50], caption=df['nome'][50], use_column_width="always")
-   col2.image(df['foto'][51], caption=df['nome'][51], use_column_width="always")
-   col3.image(df['foto'][52], caption=df['nome'][52], use_column_width="always")
-   col4.image(df['foto'][53], caption=df['nome'][53], use_column_width="always")
+   #col1.image(df['foto'][50], caption=df['nome'][50], use_column_width="always")
+   #col2.image(df['foto'][51], caption=df['nome'][51], use_column_width="always")
+   #col3.image(df['foto'][52], caption=df['nome'][52], use_column_width="always")
+   #col4.image(df['foto'][53], caption=df['nome'][53], use_column_width="always")
     
-   col1.image(df['foto'][54], caption=df['nome'][54], use_column_width="always")
-   col2.image(df['foto'][3], caption=df['nome'][3], use_column_width="always")
-   col3.image(df['foto'][5], caption=df['nome'][5], use_column_width="always")
-   col4.image(df['foto'][7], caption=df['nome'][7], use_column_width="always")
+   #col1.image(df['foto'][54], caption=df['nome'][54], use_column_width="always")
+   #col2.image(df['foto'][3], caption=df['nome'][3], use_column_width="always")
+   #col3.image(df['foto'][5], caption=df['nome'][5], use_column_width="always")
+   #col4.image(df['foto'][7], caption=df['nome'][7], use_column_width="always")
