@@ -30,7 +30,31 @@ if escolha=="TABELA COM FOTO":
    col2.image(df_filtro['foto'][32], caption=df_filtro['nome'][32], use_column_width="always")
    col3.image(df_filtro['foto'][51], caption=df_filtro['nome'][51], use_column_width="always")
    col4.image(df_filtro['foto'][41], caption=df_filtro['nome'][41], use_column_width="always")
+
+   col1.image(df_filtro['foto'][18], caption=df_filtro['nome'][18], use_column_width="always")
+   col2.image(df_filtro['foto'][10], caption=df_filtro['nome'][10], use_column_width="always")
+   col3.image(df_filtro['foto'][38], caption=df_filtro['nome'][38], use_column_width="always")
+   col4.image(df_filtro['foto'][57], caption=df_filtro['nome'][57], use_column_width="always")
+
+   col1.image(df_filtro['foto'][49], caption=df_filtro['nome'][49], use_column_width="always")
+   col2.image(df_filtro['foto'][35], caption=df_filtro['nome'][35], use_column_width="always")
+   col3.image(df_filtro['foto'][39], caption=df_filtro['nome'][39], use_column_width="always")
+   col4.image(df_filtro['foto'][14], caption=df_filtro['nome'][14], use_column_width="always")
+
+   col1.image(df_filtro['foto'][34], caption=df_filtro['nome'][34], use_column_width="always")
+   col2.image(df_filtro['foto'][7], caption=df_filtro['nome'][7], use_column_width="always")
+   col3.image(df_filtro['foto'][23], caption=df_filtro['nome'][23], use_column_width="always")
+   col4.image(df_filtro['foto'][29], caption=df_filtro['nome'][29], use_column_width="always")
    
+   col1.image(df_filtro['foto'][16], caption=df_filtro['nome'][16], use_column_width="always")
+   col2.image(df_filtro['foto'][26], caption=df_filtro['nome'][26], use_column_width="always")
+   col3.image(df_filtro['foto'][17], caption=df_filtro['nome'][17], use_column_width="always")
+   col4.image(df_filtro['foto'][8], caption=df_filtro['nome'][8], use_column_width="always")
+
+   col1.image(df_filtro['foto'][13], caption=df_filtro['nome'][13], use_column_width="always")
+   col2.image(df_filtro['foto'][55], caption=df_filtro['nome'][55], use_column_width="always")
+   col3.image(df_filtro['foto'][58], caption=df_filtro['nome'][58], use_column_width="always")
+   col4.image(df_filtro['foto'][42], caption=df_filtro['nome'][42], use_column_width="always")
 
 if escolha=="MURAL DE FOTOS":
 
