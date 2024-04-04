@@ -29,7 +29,7 @@ if escolha=="TABELA COM FOTO":
    col1.image(df_filtro['foto'][54], caption=df_filtro['nome'][54], use_column_width="always")
    col2.image(df_filtro['foto'][32], caption=df_filtro['nome'][32], use_column_width="always")
    col3.image(df_filtro['foto'][51], caption=df_filtro['nome'][51], use_column_width="always")
-   col4.image(df_filtro['foto'][41], caption=ddf_filtrof['nome'][41], use_column_width="always")
+   col4.image(df_filtro['foto'][41], caption=df_filtrof['nome'][41], use_column_width="always")
    
 
 if escolha=="MURAL DE FOTOS":
