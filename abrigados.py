@@ -58,6 +58,25 @@ if escolha=="MURAL DE FOTOS":
    col3.image(df_filtro['foto'][58], caption=df_filtro['nome'][58], use_column_width="always")
    col4.image(df_filtro['foto'][42], caption=df_filtro['nome'][42], use_column_width="always")
 
+   col1.image(df_filtro['foto'][26], caption=df_filtro['nome'][26], use_column_width="always")
+   col2.image(df_filtro['foto'][16], caption=df_filtro['nome'][16], use_column_width="always")
+   col3.image(df_filtro['foto'][23], caption=df_filtro['nome'][23], use_column_width="always")
+   col4.image(df_filtro['foto'][19], caption=df_filtro['nome'][19], use_column_width="always")
+
+   col1.image(df_filtro['foto'][33], caption=df_filtro['nome'][33], use_column_width="always")
+   col2.image(df_filtro['foto'][44], caption=df_filtro['nome'][44], use_column_width="always")
+   col3.image(df_filtro['foto'][46], caption=df_filtro['nome'][46], use_column_width="always")
+   col4.image(df_filtro['foto'][47], caption=df_filtro['nome'][47], use_column_width="always")
+
+   col1.image(df_filtro['foto'][4], caption=df_filtro['nome'][4], use_column_width="always")
+   col2.image(df_filtro['foto'][27], caption=df_filtro['nome'][27], use_column_width="always")
+   col3.image(df_filtro['foto'][63], caption=df_filtro['nome'][63], use_column_width="always")
+   col4.image(df_filtro['foto'][37], caption=df_filtro['nome'][37], use_column_width="always")
+
+   col1.image(df_filtro['foto'][40], caption=df_filtro['nome'][40], use_column_width="always")
+
+
+
 if escolha=="MURAL DE FOTOS1":
 
    from supabase import create_client, Client
