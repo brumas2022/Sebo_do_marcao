@@ -58,7 +58,7 @@ if escolha=="MURAL DE FOTOS":
    col3.image(df_filtro['foto'][58], caption=df_filtro['nome'][58], use_column_width="always")
    col4.image(df_filtro['foto'][42], caption=df_filtro['nome'][42], use_column_width="always")
 
-if escolha=="MURAL DE FOTOS(teste)":
+if escolha=="MURAL DE FOTOS1":
 
    from supabase import create_client, Client
    #url: str = os.environ.get("https://ibhcxtnwnonsnycfgjay.supabase.co")
