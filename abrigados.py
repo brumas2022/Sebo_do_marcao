@@ -11,7 +11,7 @@ engine = create_engine('postgresql://postgres.ibhcxtnwnonsnycfgjay:Hoje#estamos#
 #engine = create_engine('postgresql://postgres:Lula#2022@localhost:5432/postgres')
 sql = "SELECT * FROM caninos"
 df = pd.read_sql_query(sql, con=engine)
-lista = ["FORM', "TABELA COMPLETA","TABELA COM FOTO", "MURAL DE FOTOS"]
+lista = ["FORM", "TABELA COMPLETA","TABELA COM FOTO", "MURAL DE FOTOS"]
 
 escolha = st.sidebar.radio("ESCOLHA A OPCAO DESEJADA  :", lista)
 if escolha=="FORM":
