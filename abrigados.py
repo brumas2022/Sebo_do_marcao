@@ -11,7 +11,7 @@ engine = create_engine('postgresql://postgres.ibhcxtnwnonsnycfgjay:Hoje#estamos#
 #engine = create_engine('postgresql://postgres:Lula#2022@localhost:5432/postgres')
 sql = "SELECT * FROM caninos"
 df = pd.read_sql_query(sql, con=engine)
-lista = ["FORM", "TABELA COMPLETA","TABELA COM FOTO", "MURAL DE FOTOS"]
+lista = ["FORM", "TABELA COMPLETA","TABELA COM FOTO", "MURAL DE FOTOS", "SUPA"]
 
 escolha = st.sidebar.radio("ESCOLHA A OPCAO DESEJADA  :", lista)
 if escolha=="FORM":
@@ -83,15 +83,19 @@ if escolha=="MURAL DE FOTOS":
 
 
 
-if escolha=="MURAL DE FOTOS1":
+if escolha=="SUPA":
 
    from supabase import create_client, Client
    #url: str = os.environ.get("https://ibhcxtnwnonsnycfgjay.supabase.co")
    #key: str = os.environ.get("eyHHHJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImliaGN4dG53bm9uc255Y2ZnamF5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTUxNTM5NjIsImV4cCI6MjAxMDcyOTk2Mn0.PYLOei6RiMbucEqUmTtnmkcjDfIptsiTcNrUCmrBH7c")
    supabase: Client = create_client('https://ibhcxtnwnonsnycfgjay.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImliaGN4dG53bm9uc255Y2ZnamF5Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY5NTE1Mzk2MiwiZXhwIjoyMDEwNzI5OTYyfQ.W9t9sqi_odq3kV2WovKCVfMXcFGprFOgai9Us9_rTQA')
 
-   resposta = supabase.table("caninos").select("*").execute()
+   res=supabase.storage.from_('meninos').create_signed_url
 
+   st.write(res)
+   
+   resposta = supabase.table("caninos").select("*").execute()
+   
    
    c1, c2, c3, c4 = st.columns((1,1,1,1))
    c1.write(resposta.data[11]["nome"])
