@@ -4,7 +4,9 @@ import streamlit as st
 
 st.set_page_config(layout="wide")
 
-st.header("Animais na ARPAA")
+st.header("Animais abrigados na chacara mantida por voluntários da ARPAA")
+st.write("Eles recebem agua, alimentação, medicação e abrigo contra sol e chuva...tudo na medida do possível")
+st.write("As ajudas podem ser feitas através do PIX 66992097580")
 
 engine = create_engine('postgresql://postgres.ibhcxtnwnonsnycfgjay:Hoje#estamos#firmes#como#geleia@aws-0-sa-east-1.pooler.supabase.com:5432/postgres')
 #engine = create_engine('postgresql://postgres:Lula#2022@localhost:5432/postgres')
