@@ -62,5 +62,6 @@ col4.image(df_filtro['foto'][37], caption=df_filtro['nome'][37], use_column_widt
 
 col1.image(df_filtro['foto'][40], caption=df_filtro['nome'][40], use_column_width="always")
 col2.image(df_filtro['foto'][6], caption=df_filtro['nome'][6], use_column_width="always")
+col3.image(df_filtro['foto'][28], caption=df_filtro['nome'][28], use_column_width="always")
 
 
