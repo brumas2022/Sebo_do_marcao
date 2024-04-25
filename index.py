@@ -57,7 +57,7 @@ cols[0].link_button("Galeria de fotos", "https://galeria.streamlit.app", use_con
 cols[1].link_button("Video do Youtube", "https://www.youtube.com/watch?v=JnxCIRxt3kQ&t=19s", use_container_width=True)
 cols[1].link_button("Faça sua doação", "https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js", use_container_width=True)
 cols[1].link_button("Lojinha", "https://loja1dosebo.streamlit.app/", use_container_width=True)
-cols[1].link_button("Aciona Telegram", "https://album.streamlit.app/", use_container_width=True)
+cols[1].link_button("Aciona Telegram", "https://sebodomarcao-g4cnpbtuc8aclncvnvzr4e.streamlit.app/", use_container_width=True)
 
 
 a = st.selectbox("Escolha a opção desejada",("Mensagem para o Marcao", "Desejar bom dia ao Marcao", "Desejar boa noite ao Marcao"))
