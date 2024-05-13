@@ -6,7 +6,7 @@ from st_pages import show_pages_from_config, add_page_title
 
 senha = st.sidebar.selectbox(
     "Escolha um autor para continuar",
-    ("Raul", "Marx", "Che")
+    ("Raul", "Marx", "Che", "Simon")
 )
 if senha == "Raul":
   st.sidebar.markdown(":violet[Viva a sociedade alternativa!!!]")
@@ -21,6 +21,10 @@ if senha=="Marx":
 if senha=="Che":
     st.sidebar.markdown(":red[Hasta la victoria siempre]")
     st.sidebar.markdown(":sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:")
+
+if senha=="Simon":
+    st.sidebar.markdown(":violet[Aquele que serve a uma revolução ara no mar]")
+    st.sidebar.markdown(":musical_note:")
 
 
 st.header(":green[Sebo do Marcão]", divider="orange")
