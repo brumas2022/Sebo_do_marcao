@@ -9,7 +9,7 @@ senha = st.sidebar.selectbox(
     ("Controle", "Marx", "Che", "Simon")
 )
 if senha == "Controle":
-  st.link("https://docs.google.com/spreadsheets/d/1CcE0dc60ezKeIVTOlXOoM42UBDve46HI4GTSxIs_qY0/edit#gid=69725999")
+  st.markdown("https://docs.google.com/spreadsheets/d/1CcE0dc60ezKeIVTOlXOoM42UBDve46HI4GTSxIs_qY0/edit#gid=69725999")
 
 if senha=="Marx":
     st.sidebar.markdown(":red[Trabalhadores de todo mundo, UNI-VOS]")
