@@ -36,7 +36,7 @@ st.image("https://photos.google.com/photo/AF1QipOs9EDSgHgqqiyEA4SAFooRBxWDXX1qEc
 #cols1 = st.columns((1,1,1))
 #cols1[0].image("livros-stack-realistic_1284-4735.jpg")
 #cols1[1].image("livros-stack-realistic_1284-4735.jpg")
-3cols1[2].image("livros-stack-realistic_1284-4735.jpg")
+#cols1[2].image("livros-stack-realistic_1284-4735.jpg")
 
 #cols2 = st.columns((1,1,1,1,1,1,1))
 #cols2[0].image("simbolos-musicais-ondulam-em-fundo-branco_1308-77408.jpg")
