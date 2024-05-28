@@ -31,7 +31,7 @@ st.header(":green[Sebo do Marcão]", divider="orange")
 st.markdown("Aqui será possivel encontrar coisas com nexo e também totalmente sem nexo :musical_note:")
 st.write("---")
 #st.image("IMG_20220616_220024.jpg")
-st.image("https://photos.google.com/photo/AF1QipOs9EDSgHgqqiyEA4SAFooRBxWDXX1qEc_35iQ")
+st.image("crie_uma_imagem_de_um_violao_inteirona_diagonal_ladeado_por_livros_e_notas_musicais_png.png")
 
 #cols1 = st.columns((1,1,1))
 #cols1[0].image("livros-stack-realistic_1284-4735.jpg")
