@@ -6,13 +6,10 @@ from st_pages import show_pages_from_config, add_page_title
 
 senha = st.sidebar.selectbox(
     "Escolha um autor para continuar",
-    ("Raul", "Marx", "Che", "Simon")
+    ("Controle", "Marx", "Che", "Simon")
 )
-if senha == "Raul":
-  st.sidebar.markdown(":violet[Viva a sociedade alternativa!!!]")
-  st.sidebar.markdown(":violet[....]")
-  st.sidebar.markdown(":violet[....] :musical_note:")
-  st.sidebar.markdown(":sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:")
+if senha == "Controle":
+  st.link("https://docs.google.com/spreadsheets/d/1CcE0dc60ezKeIVTOlXOoM42UBDve46HI4GTSxIs_qY0/edit#gid=69725999")
 
 if senha=="Marx":
     st.sidebar.markdown(":red[Trabalhadores de todo mundo, UNI-VOS]")
