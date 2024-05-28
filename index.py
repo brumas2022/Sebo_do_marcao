@@ -6,14 +6,24 @@ from st_pages import show_pages_from_config, add_page_title
 
 senha = st.sidebar.selectbox(
     "Escolha um autor para continuar",
-    ("Sheets", "Marx", "Che", "Simon")
+    ("Sheets", "Programas", "Che", "Simon")
 )
 if senha == "Sheets":
   st.sidebar.link_button("Controle de Ponto","https://docs.google.com/spreadsheets/d/1CcE0dc60ezKeIVTOlXOoM42UBDve46HI4GTSxIs_qY0/edit#gid=69725999")
 
-if senha=="Marx":
-    st.sidebar.markdown(":red[Trabalhadores de todo mundo, UNI-VOS]")
-    st.sidebar.markdown(":sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:")
+if senha=="Programas":
+    st.sidebar.link_button("Memorando SANEAR", "https://comunicasanear-avcnrpqesbpzeg2ecsmuun.streamlit.app/", use_container_width=True)
+    st.sidebar.link_button("Cadastro de animais", "https://causanimal.streamlit.app", use_container_width=True)
+    st.sidebar.link_button("Galeria de fotos", "https://galeria.streamlit.app", use_container_width=True)
+    st.sidebar.link_button("Anotações Historia", "anotacoes.py", use_container_width=True)
+    st.sidebar.link_button("Video do Youtube", "https://www.youtube.com/watch?v=JnxCIRxt3kQ&t=19s", use_container_width=True)
+    st.sidebar.link_button("Faça sua doação", "https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js", use_container_width=True)
+    st.sidebar.link_button("Lojinha", "https://loja1dosebo.streamlit.app/", use_container_width=True)
+    st.sidebar.link_button("Aciona Telegram", "https://sebodomarcao-g4cnpbtuc8aclncvnvzr4e.streamlit.app/", use_container_width=True)
+    st.sidebar.link_button("Sobre museu Rosa Bororo - fonte: ATribunamt", "https://www.atribunamt.com.br/opiniao-do-leitor/2024/05/entre-o-passado-e-o-futuro-o-papel-do-museu-rosa-bororo-na-historia-em-rondonopolis/", use_container_width=True)
+
+    #st.sidebar.markdown(":red[Trabalhadores de todo mundo, UNI-VOS]")
+    #st.sidebar.markdown(":sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:")
 
 if senha=="Che":
     st.sidebar.markdown(":red[Hasta la victoria siempre]")
