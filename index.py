@@ -45,7 +45,7 @@ st.image("crie_uma_imagem_de_um_violao_inteirona_diagonal_ladeado_por_livros_e_n
 cols = st.columns((1,1,1,1,1))
 cols[0].link_button("F1", "https://www.uol.com.br", use_container_width=True)
 cols[1].link_button("F2", "https://www.sanearmt.com.br", use_container_width=True)
-cols[2].link_button("F3", "https://www.rondonopolis.mt.gov.br", use_container_width=True)
+cols[2].link_button("F3", "http://www.rondonopolis.mt.gov.br", use_container_width=True)
 cols[3].link_button("F4", "https://www.atribunamt.com.br", use_container_width=True)
 cols[4].link_button("F5", "https://www.agoramt.com.br", use_container_width=True)
 
