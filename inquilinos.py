@@ -7,29 +7,6 @@ import pandas as pd
 
 st.set_page_config(page_title="Caes abrigados", layout="wide")
 
-password=0
-while True:
-   login = st.sidebar.text_input("Digite o login")
-   password = st.sidebar.text_input("Digite a senha")
-   if password=="jacare":
-      break
-   else:
-      st.sidebar.write("Tente outra vez")
-   
-
-senha = st.sidebar.selectbox(
-    "Escolha um deles para continuar",
-    ("Janis", "Home phone", "Mobile phone")
-)
-
-if senha=="Janis":
-    st.sidebar.markdown(":green[Janis esta de olho em voce]")
-    st.sidebar.image("IMG_20230929_132220668~2.jpg")
-if senha=="Home phone":
-    st.sidebar.markdown(":blue[Voce escolheu o home phone]")   
-
-
-
 def apresenta():
     try:
         
@@ -117,10 +94,10 @@ def inserir(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12):
 def captura():
     with st.form("Caputar dados", clear_on_submit=True):
         col = st.columns((1,1))
-        a1 = col[0].text_input("Nome do câo")
-        a2 = col[0].text_input("Genero do cão")
-        a3 = col[0].date_input("Data da entrada")
-        a4 = col[0].date_input("Data da castração")
+        a1 = col[0].text_input("Nome do inquilino(a)")
+        a2 = col[0].text_input("CPF")
+        a3 = col[0].date_input("RG")
+        a4 = col[0].date_input("Estado civil")
         a5 = col[0].date_input("Data da primeira vacina")
         a6 = col[0].date_input("Data da segunda vacina")
         a7 = col[1].date_input("Data da terceira vacina")
@@ -184,9 +161,9 @@ def consulta():
     
 
 
-st.title("Cadastro dos caes")
+st.title("Cadastro dos inquilinos")
 st.divider()
-selecao = st.selectbox("Escolha o modulo", ("CADASTRAR", "CONSULTAR", "REMOVER", "RELATORIO"))
+selecao = st.selectbox("Escolha o modulo", ("CADASTRAR", "CONSULTAR", "REMOVER", "CONTRATO"))
 if selecao == "CADASTRAR":
     captura()
     
@@ -196,7 +173,7 @@ elif selecao == "CONSULTAR":
 elif selecao == "REMOVER":
     st.text("Este modulo ainda está em construção")
     
-elif selecao == "RELATORIO":
+elif selecao == "CONTRATO":
     apresenta()
     
     
