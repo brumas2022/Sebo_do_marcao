@@ -22,7 +22,7 @@ def apresenta():
         cursor = connection.cursor()
         
         
-        comando = f"""SELECT * FROM saobernardo ## WHERE genero='macho' and vivo=True"""
+        comando = f"""SELECT * FROM saobernardo"""
         cursor.execute(comando)
         resultado = cursor.fetchall()
         st.markdown(resultado)
