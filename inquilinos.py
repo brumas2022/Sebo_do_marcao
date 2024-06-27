@@ -60,17 +60,10 @@ def inserir(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12):
      connection = psycopg2.connect(
                host='aws-0-sa-east-1.pooler.supabase.com',
                user='postgres.hdhvkseneldllvnlvpgc',
-               password='Hoje#estamos#firmes#como#geleia',
+               password='Hoje#estamos#fortes#como#geleia',
                database='postgres',
                port='5432'
-
-
-        
-               ##host='db.ibhcxtnwnonsnycfgjay.supabase.co',
-               ##user='postgres',
-               ##password='Hoje#estamos#fortes#como#geleia',
-               ##database='postgres',
-               ##port='5432'
+                
      )
      st.write("conexao exitosa")
 
