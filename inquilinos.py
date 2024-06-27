@@ -5,46 +5,42 @@ import pandas as pd
 
 
 
-st.set_page_config(page_title="Caes abrigados", layout="wide")
+st.set_page_config(page_title="Condominio Brumatti", layout="wide")
 
 def apresenta():
     try:
         
         connection = psycopg2.connect(
                    host='aws-0-sa-east-1.pooler.supabase.com',
-                   user='postgres.ibhcxtnwnonsnycfgjay',
-                   password='Hoje#estamos#firmes#como#geleia',
+                   user='postgres.hdhvkseneldllvnlvpgc',
+                   password='Hoje#estamos#fortes#como#geleia',
                    database='postgres',
                    port='5432'
-                   ##host='db.ibhcxtnwnonsnycfgjay.supabase.co',
-                   ##user='postgres',
-                   ##password='Hoje#estamos#fortes#como#geleia',
-                   ##database='postgres',
-                   ##port= '5432'
+                   
         )
         st.write("conexao exitosa")
         cursor = connection.cursor()
         
         
-        comando = f"""SELECT * FROM caninos WHERE genero='macho' and vivo=True"""
+        comando = f"""SELECT * FROM saobernardo ## WHERE genero='macho' and vivo=True"""
         cursor.execute(comando)
         resultado = cursor.fetchall()
-        st.markdown(":dog2: O numero de machos é : "+str(len(resultado)))
+        st.markdown(resultado)
 
-        comando = f"""SELECT * FROM caninos WHERE genero='femea' and vivo=True"""
-        cursor.execute(comando)
-        resultado = cursor.fetchall()
-        st.markdown(":dog: O numero de femeas é : "+ str(len(resultado)))
+        #comando = f"""SELECT * FROM caninos WHERE genero='femea' and vivo=True"""
+        #cursor.execute(comando)
+        #resultado = cursor.fetchall()
+        #st.markdown(":dog: O numero de femeas é : "+ str(len(resultado)))
 
-        comando = f"""SELECT * FROM caninos WHERE castrado=True"""
-        cursor.execute(comando)
-        resultado = cursor.fetchall()
-        st.markdown(":sunglasses: :sunglasses: O numero de castrados é : "+str(len(resultado)))
+        #comando = f"""SELECT * FROM caninos WHERE castrado=True"""
+        #cursor.execute(comando)
+        #resultado = cursor.fetchall()
+        #st.markdown(":sunglasses: :sunglasses: O numero de castrados é : "+str(len(resultado)))
        
-        comando = f"""SELECT * FROM caninos WHERE vivo=True"""
-        cursor.execute(comando)
-        resultado = cursor.fetchall()
-        st.markdown(":sunglasses: :sunglasses: O numero de total é : "+str(len(resultado)))
+        #comando = f"""SELECT * FROM caninos WHERE vivo=True"""
+        #cursor.execute(comando)
+        #resultado = cursor.fetchall()
+        #st.markdown(":sunglasses: :sunglasses: O numero de total é : "+str(len(resultado)))
 
         
         
