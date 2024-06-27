@@ -78,7 +78,7 @@ def inserir(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12):
 
 
 
-     comando = f"""INSERT INTO caninos (nome, genero, entrada, castracao, vacina1, vacina2, vacina3, adocao, morte, quem_adotou, foto, historico) VALUES ('{a1}', '{a2}', '{a3}', '{a4} ', '{a5}', '{a6}', '{a7}', '{a8}', '{a9}', '{a10} ', '{a11}', '{a12} ')"""
+     comando = f"""INSERT INTO saobernardo (nome, cpf, rg, civil, entrada, saida, contato, casa, prazo, foto, conjuge, historico) VALUES ('{a1}', '{a2}', '{a3}', '{a4} ', '{a5}', '{a6}', '{a7}', '{a8}', '{a9}', '{a10} ', '{a11}', '{a12} ')"""
      
 
      cursor.execute(comando)
@@ -96,16 +96,16 @@ def captura():
         col = st.columns((1,1))
         a1 = col[0].text_input("Nome do inquilino(a)")
         a2 = col[0].text_input("CPF")
-        a3 = col[0].date_input("RG")
-        a4 = col[0].date_input("Estado civil")
-        a5 = col[0].date_input("Data da primeira vacina")
-        a6 = col[0].date_input("Data da segunda vacina")
-        a7 = col[1].date_input("Data da terceira vacina")
-        a8 = col[1].date_input("Data da adocao")
-        a9 = col[1].date_input("Data da morte")
-        a10 = col[1].text_input("Quem adotou")
-        a11 = col[1].text_input("Escolha a foto")
-        a12 = col[1].text_input("Historico do caozinho")
+        a3 = col[0].text_input("RG")
+        a4 = col[0].text_input("Estado civil")
+        a5 = col[0].date_input("Data da entrada no imovel")
+        a6 = col[0].date_input("Data da saida do imovel")
+        a7 = col[1].text_input("Telefone de contato")
+        a8 = col[1].text_input("Casa alugada")
+        a9 = col[1].text_input("Prazo do contrato")
+        a10 = col[1].text_input("Foto do documento")
+        a11 = col[1].text_input("Nome do conjuge")
+        a12 = col[1].text_input("Historico do inquilino")
         enviar = st.form_submit_button()
         if enviar:
             inserir(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12)
