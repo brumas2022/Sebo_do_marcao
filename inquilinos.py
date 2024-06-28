@@ -131,11 +131,11 @@ def consulta():
             st.write(ex)
         
     
-    cols[2].markdown("Nome : "+resultado[2])
-    cols[2].markdown("CPF : "+resultado[3])
+    cols[1].markdown("Nome : "+resultado[2])
+    cols[1].markdown("CPF : "+resultado[3])
     cols[1].markdown("RG  : "+resultado[4])
-    cols[2].markdown("Data entrada :"+resultado[5].strftime("%d/%m/%y"))
-    cols[2].markdown("Historia :"+resultado[13])
+    cols[1].markdown("Data entrada :"+resultado[6].strftime("%d/%m/%y"))
+    cols[1].markdown("Historia :"+resultado[13])
     
 
 
