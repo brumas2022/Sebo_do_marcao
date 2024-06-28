@@ -124,7 +124,7 @@ def consulta():
         
         
         
-        comando = f"""SELECT * FROM caninos WHERE nome='{nome1}'"""
+        comando = f"""SELECT * FROM saobernardo WHERE nome='{nome1}'"""
         cursor.execute(comando)
         resultado = cursor.fetchone()
     except Exception as ex:
