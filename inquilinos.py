@@ -101,35 +101,29 @@ def captura():
         
 def consulta():
     
-    ##nome1 = st.radio("Escolha o nome", ("Bob", "Gorda", "Mosquito", "Baby", "Jhony", "Margarete", "Vira lata", "Magrelo", "Jair", "Branquelo", "Boca preta", "Betina"))
     cols = st.columns((1,1,1))              
     
     try:
         
         connection = psycopg2.connect(
                    host='aws-0-sa-east-1.pooler.supabase.com',
-                   user='postgres.ibhcxtnwnonsnycfgjay',
-                   password='Hoje#estamos#firmes#como#geleia',
+                   user='postgres.hdhvkseneldllvnlvpgc',
+                   password='Hoje#estamos#fortes#como#geleia',
                    database='postgres',
                    port='5432'
             
-                   ##ANTIGA CONFIGURACAO DO DATABASE
-                   ##host='db.ibhcxtnwnonsnycfgjay.supabase.co',
-                   ##user='postgres',
-                   ##password='Hoje#estamos#fortes#como#geleia',
-                   ##database='postgres',
-                   ##port= '5432'
+                   
         )
 
         cursor = connection.cursor()
        
-        caozinho = f"""SELECT nome FROM caninos"""
-        cursor.execute(caozinho)
+        inquilino = f"""SELECT nome FROM saobernardo"""
+        cursor.execute(inquilino)
         nome2 = cursor.fetchall()
         df = pd.DataFrame(nome2)
         nome2 = df[0].tolist()
         
-        nome1 = cols[0].radio("Escolha o caozinho", (nome2))
+        nome1 = cols[0].radio("Escolha o inquilino", (nome2))
         
         
         
@@ -139,13 +133,11 @@ def consulta():
     except Exception as ex:
             st.write(ex)
         
-    if resultado[14]==True:
-       cols[2].markdown("***Animal castrado(a)***")
     
     cols[2].markdown("Nome : "+resultado[2])
-    cols[2].markdown("Genero : "+resultado[3])
-    cols[1].image(resultado[12])
-    cols[2].markdown("Data entrada :"+resultado[4].strftime("%d/%m/%y"))
+    cols[2].markdown("CPF : "+resultado[3])
+    cols[1].markdown("RG  : "+resultado[4])
+    cols[2].markdown("Data entrada :"+resultado[5].strftime("%d/%m/%y"))
     cols[2].markdown("Historia :"+resultado[13])
     
 
