@@ -21,7 +21,9 @@ if senha=="Programas":
     st.sidebar.link_button("Lojinha", "https://loja1dosebo.streamlit.app/", use_container_width=True)
     st.sidebar.link_button("Aciona Telegram", "https://sebodomarcao-g4cnpbtuc8aclncvnvzr4e.streamlit.app/", use_container_width=True)
     st.sidebar.link_button("Sobre museu Rosa Bororo - fonte: ATribunamt", "https://www.atribunamt.com.br/opiniao-do-leitor/2024/05/entre-o-passado-e-o-futuro-o-papel-do-museu-rosa-bororo-na-historia-em-rondonopolis/", use_container_width=True)
-    st.sidebar.link_button("Condominio Brumatti", "http://inquilinos.streamlit.app")
+    st.sidebar.link_button("Condominio Brumatti", "http://inquilinos.streamlit.app", use_container_width=True)
+    st.sidebar.link_button("Projeto Modernizacao", "http://controle1.streamlit.app", use_container_width=True)
+
     #st.sidebar.markdown(":red[Trabalhadores de todo mundo, UNI-VOS]")
     #st.sidebar.markdown(":sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:")
 
