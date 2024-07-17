@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import supabase as supa
 
-st.sidebar.write("Grupos")
+st.sidebar.title("Grupos")
 g1=st.sidebar.button("GRUPO 01")
 g2=st.sidebar.button("GRUPO 02")
 g3=st.sidebar.button("GRUPO 03")
