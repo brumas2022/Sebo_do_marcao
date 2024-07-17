@@ -3,28 +3,47 @@ import pandas as pd
 import supabase as supa
 
 st.sidebar.write("Grupos")
-st.sidebar.link_button("GRUPO 01")
-st.sidebar.link_button("GRUPO 02")
+g1=st.sidebar.button("GRUPO 01")
+g2=st.sidebar.button("GRUPO 02")
+g3=st.sidebar.button("GRUPO 03")
+g4=st.sidebar.button("GRUPO 04")
+g5=st.sidebar.button("GRUPO 05")
 
-lista = ["Acoes", "Responsavel", "Atrasados", "Em dia"]
-escolha = st.selectbox("Escolha uma opcao : ", lista)
-if escolha == "Acoes":
-  st.write("Estas são as XX ações do planejamento estratégico 2024")
-  st.selectbox("Es
-if escolha == "Responsavel":
-   list_resp = ["João Couto", "Denize"]
-   resp = st.radio("Escolha o responsavel para listar todaas as suas ações", list_resp)
-   if resp == "João Couto":
-      st.write("Este é o João Couto")
-      #st.image()
-   if resp == "Denize":
-      st.write("Esta é a Denize")
-      #st.image()
-   #fazer o filtro no supabse com o resp
-if escolha == "Atrasados":
-   st.write("Estas ações estão com os seguinte atrasos")
-if escolha == "Em dia"
-   st.write("Estas ações estão em dia")
+if g1:
+  st.title("Este é GRUPO 01 formado por este membros e suas ações estão ao lado")
+
+if g2:
+  st.title("Este é GRUPO 02 formado por este membros e suas ações estão ao lado")
+
+if g3:
+  st.title("Este é GRUPO 03 formado por este membros e suas ações estão ao lado")
+  
+if g4:
+  st.title("Este é GRUPO 04 formado por este membros e suas ações estão ao lado")
+  
+if g5:
+  st.title("Este é GRUPO 05 formado por este membros e suas ações estão ao lado")
+
+
+#lista = ["Acoes", "Responsavel", "Atrasados", "Em dia"]
+#escolha = st.selectbox("Escolha uma opcao : ", lista)
+#if escolha == "Acoes":
+#  st.write("Estas são as XX ações do planejamento estratégico 2024")
+#  st.selectbox("Es
+#if escolha == "Responsavel":
+#   list_resp = ["João Couto", "Denize"]
+#   resp = st.radio("Escolha o responsavel para listar todaas as suas ações", list_resp)
+#   if resp == "João Couto":
+#      st.write("Este é o João Couto")
+#      #st.image()
+#   if resp == "Denize":
+#      st.write("Esta é a Denize")
+#      #st.image()
+#   #fazer o filtro no supabse com o resp
+#if escolha == "Atrasados":
+#   st.write("Estas ações estão com os seguinte atrasos")
+#if escolha == "Em dia"
+#   st.write("Estas ações estão em dia")"""
 
 
   
