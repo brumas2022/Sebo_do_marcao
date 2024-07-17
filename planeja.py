@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import supabase as supa
-
+st.set_page_config(layout="wide")
 st.sidebar.title("Grupos")
 g1=st.sidebar.button("GRUPO 01")
 g2=st.sidebar.button("GRUPO 02")
