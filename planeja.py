@@ -19,8 +19,8 @@ if g1:
   df_descr=df.iloc[0,1]
   df_term=df.iloc[0,6]
   
-  acao=df.columns[1]
-  nome_acao=df.columns[0]
+  nome_acao=df.columns[1]
+  acao=df.columns[0]
   
   st.sidebar.write(df_descr)
   st.sidebar.write(df_term)
@@ -28,7 +28,7 @@ if g1:
   
   col1 = st.columns((1,1,1))
   col1[0].image("zeroum.jpg")
-  col1[1].button(acao+nome_acao)
+  col1[1].button(acao+" - "+nome_acao)
   col1[0].write(acao)
   col1[0].write(nome_acao)
 
