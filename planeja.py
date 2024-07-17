@@ -23,7 +23,7 @@ if g1:
   st.sidebar.write(colunas)
   col1 = st.columns((1,1,1))
   col1[0].image("zeroum.jpg")
-  col1[1].dataframe(df.head(1))
+  col1[1].dataframe(df.head(0))
 
   
     
