@@ -1,6 +1,11 @@
 import streamlit as st
 import pandas as pd
 import supabase as supa
+
+st.sidebar.write("Grupos")
+st.sidebar.link_button("GRUPO 01")
+st.sidebar.link_button("GRUPO 02")
+
 lista = ["Acoes", "Responsavel", "Atrasados", "Em dia"]
 escolha = st.selectbox("Escolha uma opcao : ", lista)
 if escolha == "Acoes":
