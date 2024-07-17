@@ -8,6 +8,8 @@ g2=st.sidebar.button("GRUPO 02")
 g3=st.sidebar.button("GRUPO 03")
 g4=st.sidebar.button("GRUPO 04")
 g5=st.sidebar.button("GRUPO 05")
+g6=st.sidebar.button("INSERIR AÇÃO")
+g7=st.sidebar.button("OUTROS")
 
 if g1:
   st.title("Este é GRUPO 01 formado por este membros e suas ações estão ao lado")
@@ -25,6 +27,10 @@ if g4:
   
 if g5:
   st.title("Este é GRUPO 05 formado por este membros e suas ações estão ao lado")
+
+if g6:
+  st.title("Este é o modulo de inserção de ações")
+  
 
 
 #lista = ["Acoes", "Responsavel", "Atrasados", "Em dia"]
