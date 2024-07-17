@@ -17,7 +17,7 @@ if g1:
   df=pd.read_excel("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 01.xlsx", sheet_name=2) 
   df_descr=df.iloc[0,1]
   df_term=df.iloc[0,6]
-  colunas=list(df.colums)
+  colunas=list(df.columns)
   st.sidebar.write(df_descr)
   st.sidebar.write(df_term)
   st.sidebar.write(colunas)
