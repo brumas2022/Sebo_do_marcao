@@ -17,8 +17,10 @@ if g1:
   df=pd.read_excel("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 01.xlsx", sheet_name=2) 
   df_descr=df.iloc[0,1]
   df_term=df.iloc[0,6]
+  colunas=list(df.colums)
   st.sidebar.write(df_descr)
   st.sidebar.write(df_term)
+  st.sidebar.write(colunas)
   col1 = st.columns((1,1,1))
   col1[0].image("zeroum.jpg")
   col1[1].dataframe(df.head(1))
