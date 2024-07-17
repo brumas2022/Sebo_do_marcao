@@ -16,7 +16,7 @@ if g1:
   df=pd.read_excel("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 01.xlsx", sheet_name=2) 
   
   col1 = st.columns((1,1,1))
-  col1[0].imagem("zeroum.jpg")
+  col1[0].image("zeroum.jpg")
   col1[1].dataframe(df)
 
   
