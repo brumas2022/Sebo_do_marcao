@@ -12,7 +12,7 @@ g6=st.sidebar.button("INSERIR AÇÃO")
 g7=st.sidebar.button("OUTROS")
 
 if g1:
-  st.title("Este é GRUPO 01 formado por este membros e suas ações estão ao lado")
+  #st.title("Este é GRUPO 01 formado por este membros e suas ações estão ao lado")
   
   df1=pd.read_excel("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 01.xlsx", sheet_name=1)
   df2=pd.read_excel("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 01.xlsx", sheet_name=2)
