@@ -13,7 +13,7 @@ g7=st.sidebar.button("OUTROS")
 
 if g1:
   st.title("Este é GRUPO 01 formado por este membros e suas ações estão ao lado")
-  df=pd.read_excel("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 01.xlsx", sheet_name=1)
+  df=pd.read_excel("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 01.xlsx", sheet_name=2)
   st.dataframe(df)
   
 if g2:
