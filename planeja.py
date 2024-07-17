@@ -15,7 +15,8 @@ if g1:
   st.title("Este é GRUPO 01 formado por este membros e suas ações estão ao lado")
   
   df=pd.read_excel("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 01.xlsx", sheet_name=2) 
-  
+  df_descr=df.iloc[0,1]
+  st.sidebar.write(df_descr)
   col1 = st.columns((1,1,1))
   col1[0].image("zeroum.jpg")
   col1[1].dataframe(df.head(1))
