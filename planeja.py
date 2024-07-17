@@ -14,13 +14,19 @@ g7=st.sidebar.button("OUTROS")
 if g1:
   st.title("Este é GRUPO 01 formado por este membros e suas ações estão ao lado")
   
-  df=pd.read_excel("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 01.xlsx", sheet_name=2) 
+  df1=pd.read_excel("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 01.xlsx", sheet_name=1)
+  df2=pd.read_excel("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 01.xlsx", sheet_name=2)
+  df3=pd.read_excel("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 01.xlsx", sheet_name=3)
+  df4=pd.read_excel("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 01.xlsx", sheet_name=4)
+  df5=pd.read_excel("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 01.xlsx", sheet_name=5)
+  df6=pd.read_excel("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 01.xlsx", sheet_name=6)
+  df7=pd.read_excel("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 01.xlsx", sheet_name=7)
   
-  df_descr=df.iloc[0,1]
-  df_term=df.iloc[0,6]
+  df_descr=df1.iloc[0,1]
+  df_term=df1.iloc[0,6]
   
-  nome_acao=df.columns[1]
-  acao=df.columns[0]
+  nome_acao1=df1.columns[1]
+  acao1=df1.columns[0]
   
   st.sidebar.write(df_descr)
   st.sidebar.write(df_term)
@@ -28,7 +34,10 @@ if g1:
   
   col1 = st.columns((1,1,1))
   col1[0].image("DALTON_VIRGILIO.png")
-  col1[1].button(acao+" - "+nome_acao)
+  col1[1].button(acao5+" - "+nome_acao5)
+  col1[1].button(acao6+" - "+nome_acao6)
+  col1[1].button(acao7+" - "+nome_acao7)
+  
   
   
     
