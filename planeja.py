@@ -11,7 +11,9 @@ g5=st.sidebar.button("GRUPO 05")
 
 if g1:
   st.title("Este é GRUPO 01 formado por este membros e suas ações estão ao lado")
-
+  df=pd.read_csv("teste-grupo01.csv")
+  st.dataframe(df)
+  
 if g2:
   st.title("Este é GRUPO 02 formado por este membros e suas ações estão ao lado")
 
