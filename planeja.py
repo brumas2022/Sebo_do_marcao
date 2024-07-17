@@ -48,7 +48,7 @@ if g1:
   
   
   col1 = st.columns((1,1,1))
-  col1[0].image("DALTON_VIRGILIO.png")
+  col1[0].image("DALTON_VIRGILIO.png", width=200)
   col1[1].button(acao5+" - "+nome_acao5)
   col1[1].button(acao6+" - "+nome_acao6)
   col1[1].button(acao7+" - "+nome_acao7)
