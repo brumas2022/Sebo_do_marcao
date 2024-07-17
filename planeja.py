@@ -25,8 +25,23 @@ if g1:
   df_descr=df1.iloc[0,1]
   df_term=df1.iloc[0,6]
   
-  nome_acao1=df1.columns[1]
-  acao1=df1.columns[0]
+  nome_acao2=df2.columns[1]
+  acao2=df2.columns[0]
+
+  nome_acao3=df3.columns[1]
+  acao3=df3.columns[0]
+
+  nome_acao4=df4.columns[1]
+  acao4=df4.columns[0]
+
+  nome_acao5=df5.columns[1]
+  acao5=df5.columns[0]
+
+  nome_acao6=df6.columns[1]
+  acao6=df6.columns[0]
+
+   nome_acao7=df7.columns[1]
+  acao7=df7.columns[0]
   
   st.sidebar.write(df_descr)
   st.sidebar.write(df_term)
