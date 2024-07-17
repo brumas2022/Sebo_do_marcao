@@ -40,7 +40,7 @@ if g1:
   nome_acao6=df6.columns[1]
   acao6=df6.columns[0]
 
-   nome_acao7=df7.columns[1]
+  nome_acao7=df7.columns[1]
   acao7=df7.columns[0]
   
   st.sidebar.write(df_descr)
