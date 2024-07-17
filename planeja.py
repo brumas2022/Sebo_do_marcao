@@ -28,7 +28,7 @@ if g1:
   
   col1 = st.columns((1,1,1))
   col1[0].image("zeroum.jpg")
-  col1[1].dataframe(df.head(0))
+  col1[1].button(acao+nome_acao)
   col1[0].write(acao)
   col1[0].write(nome_acao)
 
