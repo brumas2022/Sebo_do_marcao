@@ -13,9 +13,14 @@ g7=st.sidebar.button("OUTROS")
 
 if g1:
   st.title("Este é GRUPO 01 formado por este membros e suas ações estão ao lado")
-  df=pd.ExcelFile("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 01.xlsx", sheet_name=2)
-  st.dataframe(df)
+  df=pd.read_excel("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 01.xlsx", sheet_name=2) 
   
+  col1 = st.columns((1,1,1))
+  col1[0].imagem("zeroum.jpg")
+  col1[1].dataframe(df)
+
+  
+    
 if g2:
   st.title("Este é GRUPO 02 formado por este membros e suas ações estão ao lado")
 
