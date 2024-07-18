@@ -5,7 +5,7 @@ st.set_page_config(layout="wide")
 st.sidebar.title("Grupos")
 
 def cliq_5():
-      #df5.columns = ['Item', 'Descrição', 'Data Inicio, 'Data Fim']
+      df5.columns = ['Item', 'Descrição', 'Responsavel', 'Data Inicio, 'Data Fim', 'Proprio', 'União', 'Quem', 'N1', 'N2']
       st.dataframe(df5.iloc[3:])
 def cliq_6():
       st.dataframe(df6.iloc[3:])
