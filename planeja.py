@@ -24,6 +24,9 @@ if g1:
   
   df_descr=df1.iloc[0,1]
   df_term=df1.iloc[0,6]
+
+  nome_acao1=df1.columns[1]
+  acao1=df1.columns[0]
   
   nome_acao2=df2.columns[1]
   acao2=df2.columns[0]
