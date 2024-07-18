@@ -63,7 +63,7 @@ if g1:
   col1[2].button(acao2+" - "+nome_acao2)
   col1[3].button(acao1+" - "+nome_acao1)
   
-  def cliq_a:
+  def cliq_a():
       st.write("Deu certo")
   
   
