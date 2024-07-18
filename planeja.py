@@ -6,11 +6,12 @@ st.sidebar.title("Grupos")
 
 def cliq_5():
       df5.columns = ['Item', 'Descrição', 'Responsavel', 'Data Inicio', 'Data Fim', 'Proprio', 'União', 'Quem', 'N1', 'N2']
-      st.dataframe(df5.iloc[3:])
+      df5.drop(['Responsavel', 'N1', 'N2'], inplace=True, axis=1)
+      st.dataframe(df5.iloc[4:])
 def cliq_6():
-      st.dataframe(df6.iloc[3:])
+      st.dataframe(df6.iloc[4:])
 def cliq_7():
-      st.dataframe(df7.iloc[3:])
+      st.dataframe(df7.iloc[4:])
 
 
 g1=st.sidebar.button("GRUPO 01")
