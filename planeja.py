@@ -67,7 +67,7 @@ if g1:
   col1[1].write(" ")
   col1[1].write(" ")
   col1[1].button(acao1+" - "+nome_acao1)
-  if a
+  if a:
      st.write("Resultados")
      st.dataframe(df5.loc[5])
   
