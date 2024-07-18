@@ -5,11 +5,11 @@ st.set_page_config(layout="wide")
 st.sidebar.title("Grupos")
 
 def cliq_5():
-      st.dataframe(df5.iloc[4:])
+      st.dataframe(df5.iloc[3:])
 def cliq_6():
-      st.dataframe(df6.iloc[4:])
+      st.dataframe(df6.iloc[3:])
 def cliq_7():
-      st.dataframe(df7.iloc[4:])
+      st.dataframe(df7.iloc[3:])
 
 
 g1=st.sidebar.button("GRUPO 01")
