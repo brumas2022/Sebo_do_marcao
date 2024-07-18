@@ -5,8 +5,10 @@ st.set_page_config(layout="wide")
 st.sidebar.title("Grupos")
 
 def cliq_5():
+      
       df5.columns = ['Item', 'Descrição', 'Responsavel', 'Data Inicio', 'Data Fim', 'Proprio', 'União', 'Quem', 'N1', 'N2']
       df5.drop(['Responsavel', 'N1', 'N2'], inplace=True, axis=1)
+      df5.set_index("Item", inplace=True)
       st.dataframe(df5.iloc[4:])
 def cliq_6():
       df6.columns = ['Item', 'Descrição', 'Responsavel', 'Data Inicio', 'Data Fim', 'Proprio', 'União', 'Quem', 'N1', 'N2']
