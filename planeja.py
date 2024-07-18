@@ -111,6 +111,15 @@ if g1:
   
     
 if g2:
+      
+  df8=pd.read_excel("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 02.xlsx", sheet_name=1)
+  df9=pd.read_excel("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 02.xlsx", sheet_name=2)
+  df10=pd.read_excel("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 02.xlsx", sheet_name=3)
+  df11=pd.read_excel("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 02.xlsx", sheet_name=4)
+  df12=pd.read_excel("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 02.xlsx", sheet_name=5)
+  df13=pd.read_excel("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 02.xlsx", sheet_name=6)
+  df14=pd.read_excel("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 02.xlsx", sheet_name=7)
+      
   col1 = st.columns((1,1,1,1))
   col1[0].image("CONCEICAO.png", width=200, use_column_width=True)
   col1[1].image("SIMONE.png", width=200, use_column_width=True)
