@@ -46,9 +46,9 @@ def cliq_1():
       df1.set_index("Item", inplace=True)
       st.dataframe(df1.iloc[4:])
 def cliq_8():
-      df8.columns = ['Item', 'Descrição', 'Responsavel', 'Data Inicio', 'Data Fim', 'Proprio', 'União', 'Quem', 'N1', 'N2']
-      df8.drop(['Responsavel', 'N1', 'N2'], inplace=True, axis=1)
-      df8.set_index("Item", inplace=True)
+      #df8.columns = ['Item', 'Descrição', 'Responsavel', 'Data Inicio', 'Data Fim', 'Proprio', 'União', 'Quem', 'N1', 'N2']
+      #df8.drop(['Responsavel', 'N1', 'N2'], inplace=True, axis=1)
+      #df8.set_index("Item", inplace=True)
       st.dataframe(df8.iloc[4:])
 
 
