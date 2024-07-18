@@ -13,10 +13,12 @@ def cliq_5():
 def cliq_6():
       df6.columns = ['Item', 'Descrição', 'Responsavel', 'Data Inicio', 'Data Fim', 'Proprio', 'União', 'Quem', 'N1', 'N2']
       df6.drop(['Responsavel', 'N1', 'N2'], inplace=True, axis=1)
+      df6.set_index("Item", inplace=True)
       st.dataframe(df6.iloc[4:])
 def cliq_7():
       df7.columns = ['Item', 'Descrição', 'Responsavel', 'Data Inicio', 'Data Fim', 'Proprio', 'União', 'Quem', 'N1', 'N2']
       df7.drop(['Responsavel', 'N1', 'N2'], inplace=True, axis=1)
+      df7.set_index("Item", inplace=True)
       st.dataframe(df7.iloc[4:])
 
 
