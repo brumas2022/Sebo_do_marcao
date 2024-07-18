@@ -9,7 +9,7 @@ def cliq_5():
       df5.columns = ['Item', 'Descrição', 'Responsavel', 'Data Inicio', 'Data Fim', 'Proprio', 'União', 'Quem', 'N1', 'N2']
       df5.drop(['Responsavel', 'N1', 'N2'], inplace=True, axis=1)
       df5.set_index("Item", inplace=True)
-      df5['Data Inicio'] = pd.to_datetime(df5['Data Inicio'])
+      #df5['Data Inicio'] = pd.to_datetime(df5['Data Inicio'])
       #df5['Data Fim'].strftime('%d/%m/%Y')
       st.dataframe(df5.iloc[4:])
 def cliq_6():
@@ -22,6 +22,30 @@ def cliq_7():
       df7.drop(['Responsavel', 'N1', 'N2'], inplace=True, axis=1)
       df7.set_index("Item", inplace=True)
       st.dataframe(df7.iloc[4:])
+
+def cliq_4():
+      df4.columns = ['Item', 'Descrição', 'Responsavel', 'Data Inicio', 'Data Fim', 'Proprio', 'União', 'Quem', 'N1', 'N2']
+      df4.drop(['Responsavel', 'N1', 'N2'], inplace=True, axis=1)
+      df4.set_index("Item", inplace=True)
+      st.dataframe(df4.iloc[4:])
+
+def cliq_3():
+      df3.columns = ['Item', 'Descrição', 'Responsavel', 'Data Inicio', 'Data Fim', 'Proprio', 'União', 'Quem', 'N1', 'N2']
+      df3.drop(['Responsavel', 'N1', 'N2'], inplace=True, axis=1)
+      df3.set_index("Item", inplace=True)
+      st.dataframe(df3.iloc[4:])
+
+def cliq_2():
+      df2.columns = ['Item', 'Descrição', 'Responsavel', 'Data Inicio', 'Data Fim', 'Proprio', 'União', 'Quem', 'N1', 'N2']
+      df2.drop(['Responsavel', 'N1', 'N2'], inplace=True, axis=1)
+      df2.set_index("Item", inplace=True)
+      st.dataframe(df2.iloc[4:])
+
+def cliq_1():
+      df1.columns = ['Item', 'Descrição', 'Responsavel', 'Data Inicio', 'Data Fim', 'Proprio', 'União', 'Quem', 'N1', 'N2']
+      df1.drop(['Responsavel', 'N1', 'N2'], inplace=True, axis=1)
+      df1.set_index("Item", inplace=True)
+      st.dataframe(df1.iloc[4:])
 
 
 g1=st.sidebar.button("GRUPO 01")
@@ -79,10 +103,10 @@ if g1:
   col1[0].button(acao5+" - "+nome_acao5, on_click=cliq_5 ,use_container_width=True)
   col1[0].button(acao6+" - "+nome_acao6, on_click=cliq_6, use_container_width=True)
   col1[0].button(acao7+" - "+nome_acao7, on_click=cliq_7, use_container_width=True)
-  col1[1].button(acao4+" - "+nome_acao4)
-  col1[1].button(acao3+" - "+nome_acao3)
-  col1[2].button(acao2+" - "+nome_acao2)
-  col1[3].button(acao1+" - "+nome_acao1)
+  col1[1].button(acao4+" - "+nome_acao4, on_click=cliq_4, use_container_width=True)
+  col1[1].button(acao3+" - "+nome_acao3, on_click=cliq_3, use_container_width=True)
+  col1[2].button(acao2+" - "+nome_acao2, on_click=cliq_2, use_container_width=True)
+  col1[3].button(acao1+" - "+nome_acao1, on_click=cliq_1, use_container_width=True)
   
  
   
