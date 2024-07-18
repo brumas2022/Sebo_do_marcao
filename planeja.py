@@ -55,7 +55,7 @@ if g1:
   col1[1].image("RENATA_MORENO.png", width=200, use_column_width=True)
   col1[2].image("WILMA_MUNDIM.png", width=200, use_column_width=True)
   col1[3].image("EDUARDO_RAMOS.png", width=200, use_column_width=True)
-  a=col1[0].button(acao5+" - "+nome_acao5, use_container_width=True)
+  col1[0].link_button(acao5+" - "+nome_acao5, "/album.py",use_container_width=True)
   col1[0].button(acao6+" - "+nome_acao6)
   col1[0].button(acao7+" - "+nome_acao7)
   col1[1].button(acao4+" - "+nome_acao4)
