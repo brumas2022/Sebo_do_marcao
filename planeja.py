@@ -55,7 +55,7 @@ if g1:
   col1[1].image("RENATA_MORENO.png", width=200, use_column_width=True)
   col1[2].image("WILMA_MUNDIM.png", width=200, use_column_width=True)
   col1[3].image("EDUARDO_RAMOS.png", width=200, use_column_width=True)
-  col1[0].link_button(acao5+" - "+nome_acao5, "https://github.com/brumas2022/Sebo_do_marcao/blob/f192482ff7f0791058229bf533105cd1c647ee20/album.py",use_container_width=True)
+  col1[0].button(acao5+" - "+nome_acao5, on_click=cliq_a ,use_container_width=True)
   col1[0].button(acao6+" - "+nome_acao6)
   col1[0].button(acao7+" - "+nome_acao7)
   col1[1].button(acao4+" - "+nome_acao4)
@@ -63,9 +63,8 @@ if g1:
   col1[2].button(acao2+" - "+nome_acao2)
   col1[3].button(acao1+" - "+nome_acao1)
   
-  if a:
-     st.sidebar.write("Resultados")
-     st.dataframe(df5.loc[5])
+  def cliq_a:
+      st.write("Deu certo")
   
   
     
