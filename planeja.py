@@ -104,8 +104,8 @@ if g1:
   col1[0].button(acao6+" - "+nome_acao6, on_click=cliq_6, use_container_width=True)
   col1[0].button(acao7+" - "+nome_acao7, on_click=cliq_7, use_container_width=True)
   col1[1].button(acao4+" - "+nome_acao4, on_click=cliq_4, use_container_width=True)
-  col1[1].button(acao3+" - "+nome_acao3, on_click=cliq_3, use_container_width=True)
-  col1[2].button(acao2+" - "+nome_acao2, on_click=cliq_2, use_container_width=True)
+  col1[1].button(acao2+" - "+nome_acao2, on_click=cliq_2, use_container_width=True)
+  col1[2].button(acao3+" - "+nome_acao2, on_click=cliq_3, use_container_width=True)
   col1[3].button(acao1+" - "+nome_acao1, on_click=cliq_1, use_container_width=True)
   
  
