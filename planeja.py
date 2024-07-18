@@ -58,6 +58,7 @@ if g1:
   col1[1].button(acao5+" - "+nome_acao5)
   col1[1].button(acao6+" - "+nome_acao6)
   col1[1].button(acao7+" - "+nome_acao7)
+  col1[1].button(" ")
   col1[1].button(acao4+" - "+nome_acao4)
   col1[1].button(acao3+" - "+nome_acao3)
   col1[1].button(acao2+" - "+nome_acao2)
