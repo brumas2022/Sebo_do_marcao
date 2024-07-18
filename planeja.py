@@ -112,19 +112,38 @@ if g1:
   
     
 if g2:
-  st.title("Este é GRUPO 02 formado por este membros e suas ações estão ao lado")
+  col1 = st.columns((1,1,1,1))
+  col1[0].image("DALTON_VIRGILIO.png", width=200, use_column_width=True)
+  col1[1].image("RENATA_MORENO.png", width=200, use_column_width=True)
+  col1[2].image("WILMA_MUNDIM.png", width=200, use_column_width=True)
+  col1[3].image("EDUARDO_RAMOS.png", width=200, use_column_width=True)
 
 if g3:
-  st.title("Este é GRUPO 03 formado por este membros e suas ações estão ao lado")
+  col1 = st.columns((1,1,1,1))
+  col1[0].image("DALTON_VIRGILIO.png", width=200, use_column_width=True)
+  col1[1].image("RENATA_MORENO.png", width=200, use_column_width=True)
+  col1[2].image("WILMA_MUNDIM.png", width=200, use_column_width=True)
+  col1[3].image("EDUARDO_RAMOS.png", width=200, use_column_width=True)
   
 if g4:
-  st.title("Este é GRUPO 04 formado por este membros e suas ações estão ao lado")
+  col1 = st.columns((1,1,1,1))
+  col1[0].image("DALTON_VIRGILIO.png", width=200, use_column_width=True)
+  col1[1].image("RENATA_MORENO.png", width=200, use_column_width=True)
+  col1[2].image("WILMA_MUNDIM.png", width=200, use_column_width=True)
+  col1[3].image("EDUARDO_RAMOS.png", width=200, use_column_width=True)
   
 if g5:
-  st.title("Este é GRUPO 05 formado por este membros e suas ações estão ao lado")
-
+  col1 = st.columns((1,1,1,1))
+  col1[0].image("DALTON_VIRGILIO.png", width=200, use_column_width=True)
+  col1[1].image("RENATA_MORENO.png", width=200, use_column_width=True)
+  col1[2].image("WILMA_MUNDIM.png", width=200, use_column_width=True)
+  col1[3].image("EDUARDO_RAMOS.png", width=200, use_column_width=True)
 if g6:
-  st.title("Este é o modulo de inserção de ações")
+  col1 = st.columns((1,1,1,1))
+  col1[0].image("DALTON_VIRGILIO.png", width=200, use_column_width=True)
+  col1[1].image("RENATA_MORENO.png", width=200, use_column_width=True)
+  col1[2].image("WILMA_MUNDIM.png", width=200, use_column_width=True)
+  col1[3].image("EDUARDO_RAMOS.png", width=200, use_column_width=True)
   
 
 
