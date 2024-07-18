@@ -5,7 +5,7 @@ st.set_page_config(layout="wide")
 st.sidebar.title("Grupos")
 
 def cliq_5():
-      st.dataframe(df5.head(5))
+      st.dataframe(df5.iloc[4:])
 
 
 g1=st.sidebar.button("GRUPO 01")
