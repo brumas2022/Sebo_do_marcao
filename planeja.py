@@ -3,6 +3,11 @@ import pandas as pd
 import supabase as supa
 st.set_page_config(layout="wide")
 st.sidebar.title("Grupos")
+
+def cliq_a():
+      st.write("Deu certo")
+
+
 g1=st.sidebar.button("GRUPO 01")
 g2=st.sidebar.button("GRUPO 02")
 g3=st.sidebar.button("GRUPO 03")
@@ -63,9 +68,7 @@ if g1:
   col1[2].button(acao2+" - "+nome_acao2)
   col1[3].button(acao1+" - "+nome_acao1)
   
-  def cliq_a():
-      st.write("Deu certo")
-  
+ 
   
     
 if g2:
