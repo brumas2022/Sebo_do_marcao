@@ -9,7 +9,7 @@ def cliq_5():
       df5.columns = ['Item', 'Descrição', 'Responsavel', 'Data Inicio', 'Data Fim', 'Proprio', 'União', 'Quem', 'N1', 'N2']
       df5.drop(['Responsavel', 'N1', 'N2'], inplace=True, axis=1)
       df5.set_index("Item", inplace=True)
-      df5['Data Fim'] = pd.to_datetime(df.Data)
+      df5['Data Fim'] = pd.to_datetime(df5.Data)
       st.dataframe(df5.iloc[4:])
 def cliq_6():
       df6.columns = ['Item', 'Descrição', 'Responsavel', 'Data Inicio', 'Data Fim', 'Proprio', 'União', 'Quem', 'N1', 'N2']
