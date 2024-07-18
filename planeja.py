@@ -45,6 +45,11 @@ def cliq_1():
       df1.drop(['Responsavel', 'N1', 'N2'], inplace=True, axis=1)
       df1.set_index("Item", inplace=True)
       st.dataframe(df1.iloc[4:])
+def cliq_8():
+      df8.columns = ['Item', 'Descrição', 'Responsavel', 'Data Inicio', 'Data Fim', 'Proprio', 'União', 'Quem', 'N1', 'N2']
+      df8.drop(['Responsavel', 'N1', 'N2'], inplace=True, axis=1)
+      df8.set_index("Item", inplace=True)
+      st.dataframe(df8.iloc[4:])
 
 
 g1=st.sidebar.button("GRUPO 01")
@@ -128,6 +133,7 @@ if g2:
   col1[1].image("SIMONE.png", width=200, use_column_width=True)
   col1[2].image("YARA.png", width=200, use_column_width=True)
   #col1[3].image("EDUARDO_RAMOS.png", width=200, use_column_width=True)
+  col1[0].button(acao8+" - "+nome_acao8, on_click=cliq_8 ,use_container_width=True)
 
 if g3:
   col1 = st.columns((1,1,1,1))
