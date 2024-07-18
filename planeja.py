@@ -119,6 +119,9 @@ if g2:
   df12=pd.read_excel("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 02.xlsx", sheet_name=5)
   df13=pd.read_excel("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 02.xlsx", sheet_name=6)
   df14=pd.read_excel("PLANEJAMENTO ESTRATÉGICO 2024 GRUPO 02.xlsx", sheet_name=7)
+
+  nome_acao8=df8.columns[1]
+  acao8=df8.columns[0]    
       
   col1 = st.columns((1,1,1,1))
   col1[0].image("CONCEICAO.png", width=200, use_column_width=True)
