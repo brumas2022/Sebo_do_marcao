@@ -4,8 +4,8 @@ import supabase as supa
 st.set_page_config(layout="wide")
 st.sidebar.title("Grupos")
 
-def cliq_a():
-      st.write("Deu certo")
+def cliq_5():
+      st.dataframe(df5.head(5))
 
 
 g1=st.sidebar.button("GRUPO 01")
@@ -60,7 +60,7 @@ if g1:
   col1[1].image("RENATA_MORENO.png", width=200, use_column_width=True)
   col1[2].image("WILMA_MUNDIM.png", width=200, use_column_width=True)
   col1[3].image("EDUARDO_RAMOS.png", width=200, use_column_width=True)
-  col1[0].button(acao5+" - "+nome_acao5, on_click=cliq_a ,use_container_width=True)
+  col1[0].button(acao5+" - "+nome_acao5, on_click=cliq_5 ,use_container_width=True)
   col1[0].button(acao6+" - "+nome_acao6)
   col1[0].button(acao7+" - "+nome_acao7)
   col1[1].button(acao4+" - "+nome_acao4)
