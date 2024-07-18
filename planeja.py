@@ -51,7 +51,7 @@ if g1:
   
   
   col1 = st.columns((1,1,1,1))
-  col1[0].image("DALTON_VIRGILIO.png", width=200, use_container_width=True)
+  col1[0].image("DALTON_VIRGILIO.png", use_container_width=True)
   col1[1].image("RENATA_MORENO.png", width=200)
   col1[2].image("WILMA_MUNDIM.png", width=200)
   col1[3].image("EDUARDO_RAMOS.png", width=200)
