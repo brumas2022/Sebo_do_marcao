@@ -2,12 +2,13 @@ import streamlit as st
 import telebot 
 import psycopg2
 
+
 st.markdown("Album dos caes abrigado na arpaa")
 
 st.markdown("aqui teremos fotos")
 escolha=st.text_input("Digite sua mensagem")
 
-CHAVE_API = "6369586964:AAFm3QLWBNnLYUwtl2xyqi0145oYJd8OHNc"
+#CHAVE_API = "6369586964:AAFm3QLWBNnLYUwtl2xyqi0145oYJd8OHNc"
 
 bot = telebot.TeleBot(CHAVE_API)  
 
