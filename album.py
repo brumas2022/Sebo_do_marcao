@@ -9,9 +9,13 @@ load_dotenv()
 # Acessando a variável de ambiente API_KEY
 CHAVE_API = os.getenv("CHAVE_API")
 
-st.markdown("Album dos caes abrigado na arpaa")
+st.title("Este site aciona o bot do telegram sobre os animais")
 
-st.markdown("aqui teremos fotos")
+a=st.text_input("Qual é a senha?")
+b=os.getenv("senha")
+if a==b:
+   st.write("Vc acertou!!!")
+   
 escolha=st.text_input("Digite sua mensagem")
 
 #CHAVE_API = "6369586964:AAFm3QLWBNnLYUwtl2xyqi0145oYJd8OHNc"
