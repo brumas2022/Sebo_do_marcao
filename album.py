@@ -1,7 +1,13 @@
 import streamlit as st
 import telebot 
 import psycopg2
+import os
+from dotenv import load_dotenv
 
+# Carregando as variáveis de ambiente do arquivo .env
+load_dotenv()
+# Acessando a variável de ambiente API_KEY
+CHAVE_API = os.getenv("CHAVE_API")
 
 st.markdown("Album dos caes abrigado na arpaa")
 
