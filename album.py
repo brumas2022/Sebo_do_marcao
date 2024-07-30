@@ -54,7 +54,7 @@ bot.send_message(820304760, escolha)
 #    bot.send_message(mensagem.chat.id, ex)
 
 @bot.message_handler(commands=["amor"])
-def amor(mensagem)
+def amor(mensagem):
     bot.send_message(820304760, "Vou verificar o que tenho para fazer")
         
 @bot.message_handler(commands=["adocao"])
