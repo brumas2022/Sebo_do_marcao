@@ -3,6 +3,7 @@ import telebot
 import psycopg2
 import os
 from dotenv import load_dotenv
+import chatterbot
 
 # Carregando as variáveis de ambiente do arquivo .env
 load_dotenv()
