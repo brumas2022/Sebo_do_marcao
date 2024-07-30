@@ -88,7 +88,7 @@ def lembretes(mensagem):
 def verificar(mensagem):
         if mensagem=="amor":
            amor()
-        return True
+        #return True
 
 @bot.message_handler(func=verificar)
 def responder(mensagem):
