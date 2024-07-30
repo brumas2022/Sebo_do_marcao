@@ -3,7 +3,7 @@ import telebot
 import psycopg2
 import os
 from dotenv import load_dotenv
-import chatterbot
+import chatterbot # nao consegui fazer nada aqui
 
 # Carregando as variáveis de ambiente do arquivo .env
 load_dotenv()
@@ -52,6 +52,10 @@ bot.send_message(820304760, escolha)
 #    bot.send_message(820304760, resultado)
 #   except Exception as ex
 #    bot.send_message(mensagem.chat.id, ex)
+
+@bot.message_handler(commands=["amor"])
+def amor(mensagem)
+    bot.send_message(820304760, "Vou verificar o que tenho para fazer")
         
 @bot.message_handler(commands=["adocao"])
 def adocao(mensagem):
