@@ -59,7 +59,7 @@ def amor(mensagem):
         
 @bot.message_handler(commands=["adocao"])
 def adocao(mensagem):
-    bot.send_message(820304760, "Hoje nos temos 08 filhotes para doar") 
+    #bot.send_message(820304760, "Hoje nos temos 08 filhotes para doar") 
     bot.send_image(820304760,"zeroum.jpg")
     
 @bot.message_handler(commands=["como_ajudar"])
