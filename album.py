@@ -96,7 +96,7 @@ def responder(mensagem):
           /lembretes
           /como_ajudar
           /adocao
-          /exi"""
+          /amor"""
     bot.reply_to(mensagem, texto)
 
 
