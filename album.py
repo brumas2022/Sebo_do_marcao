@@ -19,10 +19,7 @@ if a==b:
    
 escolha=st.text_input("Digite sua mensagem")
 
-#CHAVE_API = "6369586964:AAFm3QLWBNnLYUwtl2xyqi0145oYJd8OHNc"
-
 bot = telebot.TeleBot(CHAVE_API)  
-
 
 bot.send_message(820304760, escolha)
 
@@ -53,14 +50,15 @@ bot.send_message(820304760, escolha)
 #   except Exception as ex
 #    bot.send_message(mensagem.chat.id, ex)
 
-@bot.message_handler(commands=["amor"])
-def amor(mensagem):
+@bot.message_handler(commands=["amigo"])
+def amigo(mensagem):
     bot.send_message(820304760, "Vou verificar o que tenho para fazer")
+    bot.send_message(820304760, "Hoje e amanha")
         
 @bot.message_handler(commands=["adocao"])
 def adocao(mensagem):
-    #bot.send_message(820304760, "Hoje nos temos 08 filhotes para doar") 
-    bot.send_image(820304760,"zeroum.jpg")
+    bot.send_message(820304760, "Precisamos doar o Lobo") 
+    #bot.send_image(820304760,"zeroum.jpg")
     
 @bot.message_handler(commands=["como_ajudar"])
 def como_ajudar(mensagem):
@@ -96,7 +94,7 @@ def responder(mensagem):
           /lembretes
           /como_ajudar
           /adocao
-          /amor"""
+          /amigo"""
     bot.reply_to(mensagem, texto)
 
 
