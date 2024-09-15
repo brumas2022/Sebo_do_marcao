@@ -28,7 +28,9 @@ if senha=="Programas":
     #st.sidebar.markdown(":sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:")
 
 if senha=="Cifras":
+    
     st.sidebar.link_button("Aluga se", "https://www.cifraclub.com.br/raul-seixas/aluga-se/", use_container_width=True)
+    st.sidebar.link_button("Flor e o beija flor", "https://www.cifraclub.com.br/henrique-e-juliano/flor-e-o-beija-flor/", use_container_width=True)
     st.sidebar.markdown(":sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:")
 
 if senha=="Simon":
