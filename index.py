@@ -6,7 +6,7 @@ from st_pages import show_pages_from_config, add_page_title
 
 senha = st.sidebar.selectbox(
     "Escolha um autor para continuar",
-    ("Sheets", "Programas", "Che", "Simon")
+    ("Sheets", "Programas", "Cifras", "Simon")
 )
 if senha == "Sheets":
   st.sidebar.link_button("Controle de Ponto","https://docs.google.com/spreadsheets/d/1CcE0dc60ezKeIVTOlXOoM42UBDve46HI4GTSxIs_qY0/edit?gid=1730074094#gid=1730074094")
@@ -27,8 +27,8 @@ if senha=="Programas":
     #st.sidebar.markdown(":red[Trabalhadores de todo mundo, UNI-VOS]")
     #st.sidebar.markdown(":sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:")
 
-if senha=="Che":
-    st.sidebar.markdown(":red[Hasta la victoria siempre]")
+if senha=="Cifras":
+    st.sidebar.markdown("Aluga se", "https://www.cifraclub.com.br/raul-seixas/aluga-se/", use_container_width=True)
     st.sidebar.markdown(":sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:")
 
 if senha=="Simon":
