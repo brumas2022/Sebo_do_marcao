@@ -1,8 +1,26 @@
 import streamlit as st
+import telebot
+import psycoppg2
+import os
+from dotenv import load_dotenv
 from st_pages import show_pages_from_config, add_page_title
 
-#add_page_title()  
-#show_pages_from_config(".streamlit/pages.toml")
+def bot_telegram():
+    # Carregando as variáveis de ambiente do arquivo .env
+    load_dotenv()
+    # Acessando a variável de ambiente API_KEY
+    CHAVE_API = os.getenv("CHAVE_API")
+    st.title("Este site aciona o bot do telegram sobre os animais")
+    a=st.text_input("Qual é a senha?")
+    b=os.getenv("senha")
+    if a==b:
+       st.write("Vc acertou!!!")
+   
+    escolha=st.text_input("Digite sua mensagem")
+    bot = telebot.TeleBot(CHAVE_API)  
+    bot.send_message(820304760, escolha)
+
+
 
 senha = st.sidebar.selectbox(
     "Escolha um autor para continuar",
@@ -70,5 +88,7 @@ elif a ==  "Desejar boa noite ao Marcao":
   st.markdown("Espero estar melhor no outro dia....boa noite")
   st.snow()
   st.write("---")
+elif a == "Telegram":
+  bot_telegram()  
   
   
