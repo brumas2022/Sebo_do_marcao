@@ -10,7 +10,7 @@ def bot_telegram():
     load_dotenv()
     # Acessando a variável de ambiente API_KEY
     CHAVE_API = os.getenv("CHAVE_API")
-    st.title("Este site aciona o bot do telegram sobre os animais")
+    st.info("Este site aciona o bot do telegram sobre os animais")
     a=st.text_input("Qual é a senha?")
     b=os.getenv("senha")
     if a==b:
