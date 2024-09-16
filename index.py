@@ -72,7 +72,7 @@ cols[3].link_button("A TRIBUNA", "https://www.atribunamt.com.br", use_container_
 cols[4].link_button("CATRACA", "https://catracalivre.com.br/", use_container_width=True)
 
 
-a = st.selectbox("Escolha a opção desejada",("Mensagem para o Marcao", "Desejar bom dia ao Marcao", "Desejar boa noite ao Marcao"))
+a = st.selectbox("Escolha a opção desejada",("Mensagem para o Marcao", "Desejar bom dia ao Marcao", "Desejar boa noite ao Marcao", "Telegram"))
 if a == "Mensagem para o Marcao":
   nome = st.text_input("Digite seu nome")
   prompt = st.chat_input("Say something")
