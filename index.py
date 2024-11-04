@@ -19,6 +19,10 @@ def bot_telegram():
     escolha=st.text_input("Digite sua mensagem")
     bot = telebot.TeleBot(CHAVE_API)  
     bot.send_message(820304760, escolha)
+
+    @bot.message_hanlder("caes")
+    def caes:
+        st.write("Ele respondeu caes")
     
     def verificar(mensagem):
         return True
