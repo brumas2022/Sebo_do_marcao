@@ -39,7 +39,7 @@ def bot_telegram():
               /amigo"""
         bot.reply_to(mensagem, texto)
     
- bot.infinity_polling()
+    bot.infinity_polling()
 
 
 senha = st.sidebar.selectbox(
