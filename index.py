@@ -27,7 +27,7 @@ senha = st.sidebar.selectbox(
     ("Sheets", "Programas", "Cifras", "Simon")
 )
 if senha == "Sheets":
-  st.sidebar.link_button("Controle de Ponto","https://docs.google.com/spreadsheets/d/1CcE0dc60ezKeIVTOlXOoM42UBDve46HI4GTSxIs_qY0/edit?gid=1487714834#gid=1487714834")
+  st.sidebar.link_button("Controle de Ponto","https://docs.google.com/spreadsheets/d/1CcE0dc60ezKeIVTOlXOoM42UBDve46HI4GTSxIs_qY0/edit?gid=577486192#gid=577486192")
 
 if senha=="Programas":
     st.sidebar.link_button("Memorando SANEAR", "https://comunicasanear-avcnrpqesbpzeg2ecsmuun.streamlit.app/", use_container_width=True)
@@ -57,7 +57,7 @@ if senha=="Simon":
 
 
 st.header(":green[Sebo do Marcão]", divider="orange")
-st.markdown("Aqui será possivel encontrar coisas com nexo e também totalmente sem nexo :musical_note:")
+st.markdown("Tente fazer coisas diferentes para melhorar o seu dia :musical_note:")
 st.write("---")
 #st.image("IMG_20220616_220024.jpg")
 st.image("crie_uma_imagem_de_um_violao_inteirona_diagonal_ladeado_por_livros_e_notas_musicais_png.png")
