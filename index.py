@@ -23,6 +23,7 @@ def bot_telegram():
     @bot.message_hanlder(commands=["caes"])
     def caes(mensagem):
         st.write("Ele respondeu caes")
+        bot.send_message(820304760, "deu certo")
     
     def verificar(mensagem):
         return True
