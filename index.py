@@ -21,7 +21,7 @@ def bot_telegram():
     bot.send_message(820304760, escolha)
 
     @bot.message_hanlder(commands=['caes'])
-    def caes(message):
+    def caes(mensagem):
             st.write("Ele respondeu caes")
             bot.send_message(820304760, "deu certo")
     
@@ -39,7 +39,7 @@ def bot_telegram():
               /amigo"""
         bot.reply_to(mensagem, texto)
     
-    bot.infinity_polling()
+    
 
 
 senha = st.sidebar.selectbox(
