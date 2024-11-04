@@ -20,6 +20,20 @@ def bot_telegram():
     bot = telebot.TeleBot(CHAVE_API)  
     bot.send_message(820304760, escolha)
     
+    def verificar(mensagem):
+        return True
+
+    @bot.message_handler(func=verificar)
+    def responder(mensagem):
+        texto="""Escolha uma das opçoes:
+              /caes
+              /gatos
+              /lembretes
+              /como_ajudar
+              /adocao
+              /amigo"""
+        bot.reply_to(mensagem, texto)
+    
     bot.infinity_polling()
 
 
