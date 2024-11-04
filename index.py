@@ -20,8 +20,8 @@ def bot_telegram():
     bot = telebot.TeleBot(CHAVE_API)  
     bot.send_message(820304760, escolha)
 
-    @bot.message_hanlder("caes")
-    def caes:
+    @bot.message_hanlder(commands=["caes"])
+    def caes(mensagem):
         st.write("Ele respondeu caes")
     
     def verificar(mensagem):
