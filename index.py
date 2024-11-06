@@ -81,7 +81,8 @@ if senha=="Simon":
 
     audio1_file = open('https://archive.org/details/lp_the-swing-era-the-music-of-1941-1942-sw_various_0/disc1/01.01.+A+String+Of+Pearls+(Glenn+Miller+Version).mp3', 'rb')
     audio1_bytes = audio1_file.read()
-    st.sidebar.audio(audio1_bytes, format='audio/mpeg')
+    st.audio(audio1_bytes, format='audio/mpeg')
+    
 
 
 st.header(":green[Sebo do Marcão]", divider="orange")
