@@ -79,7 +79,7 @@ if senha=="Simon":
 
     audio_bytes = audio_file.read() #reading the file
 
-    st.audio(audio_bytes, format='audio/wav') #displaying the audio
+    st.sidebar.audio(audio_bytes, format='audio/wav') #displaying the audio
 
 
 st.header(":green[Sebo do Marcão]", divider="orange")
