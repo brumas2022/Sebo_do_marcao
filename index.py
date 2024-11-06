@@ -79,7 +79,7 @@ if senha=="Simon":
     audio_bytes = audio_file.read() #reading the file
     st.sidebar.audio(audio_bytes, format='audio/mpeg') #displaying the audio
 
-    audio1_file = open('https://archive.org/details/lp_the-swing-era-the-music-of-1941-1942-sw_various_0/disc1/01.03.+Warm+Valley+(Duke+Ellington+Version).mp3', 'rb')
+    audio1_file = open('https://archive.org/details/bestof69soundrec00baxt/02_For_once_in_my_life.mp3', 'rb')
     audio1_bytes = audio1_file.read()
     st.audio(audio1_bytes, format='audio/mpeg')
     
