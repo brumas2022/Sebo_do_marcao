@@ -76,10 +76,12 @@ if senha=="Simon":
     #st.sidebar.markdown(":musical_note:")
     #st.sidebar.audio("Eu Amo Esse Homem (Trecho).mp3", loop=True)
     audio_file = open('06-Hc3.mp3','rb') #enter the filename with filepath
-
     audio_bytes = audio_file.read() #reading the file
-
     st.sidebar.audio(audio_bytes, format='audio/mpeg') #displaying the audio
+
+    audio1_file = open('https://archive.org/details/lp_the-swing-era-the-music-of-1941-1942-sw_various_0/disc1/01.01.+A+String+Of+Pearls+(Glenn+Miller+Version).mp3', 'rb')
+    audio1_bytes = audio1_file.read()
+    st.sidebar.audio(audio1_bytes, format='audio/mpeg')
 
 
 st.header(":green[Sebo do Marcão]", divider="orange")
