@@ -74,7 +74,7 @@ if senha=="Cifras":
 if senha=="Simon":
     st.sidebar.markdown(":violet[Aquele que serve a uma revolução ara no mar]")
     #st.sidebar.markdown(":musical_note:")
-    st.sidebar.audio("06-Hc3", format="audip/mpeg")
+    st.sidebar.audio("06-Hc3", format="audip/mpeg", loop=True)
 
 
 st.header(":green[Sebo do Marcão]", divider="orange")
