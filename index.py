@@ -44,7 +44,7 @@ def bot_telegram():
 
 senha = st.sidebar.selectbox(
     "Escolha um autor para continuar",
-    ("Sheets", "Programas", "Cifras", "Simon")
+    ("Sheets", "Programas", "Cifras", "Musicas")
 )
 if senha == "Sheets":
   st.sidebar.link_button("Controle de Ponto","https://docs.google.com/spreadsheets/d/1CcE0dc60ezKeIVTOlXOoM42UBDve46HI4GTSxIs_qY0/edit?gid=577486192#gid=577486192")
@@ -71,7 +71,7 @@ if senha=="Cifras":
     st.sidebar.link_button("Flor e o beija flor", "https://www.cifraclub.com.br/henrique-e-juliano/flor-e-o-beija-flor/", use_container_width=True)
     st.sidebar.markdown(":sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:  :sunglasses:")
 
-if senha=="Simon":
+if senha=="Musicas":
     st.sidebar.markdown(":violet[Aquele que serve a uma revolução ara no mar]")
     #st.sidebar.markdown(":musical_note:")
     #st.sidebar.audio("Eu Amo Esse Homem (Trecho).mp3", loop=True)
