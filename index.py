@@ -74,7 +74,12 @@ if senha=="Cifras":
 if senha=="Simon":
     st.sidebar.markdown(":violet[Aquele que serve a uma revolução ara no mar]")
     #st.sidebar.markdown(":musical_note:")
-    st.sidebar.audio("Eu Amo Esse Homem (Trecho).mp3", loop=True)
+    #st.sidebar.audio("Eu Amo Esse Homem (Trecho).mp3", loop=True)
+    audio_file = open('Eu Amo Esse Homem (Trecho).wma','rb') #enter the filename with filepath
+
+    audio_bytes = audio_file.read() #reading the file
+
+    st.audio(audio_bytes, format='audio/wav') #displaying the audio
 
 
 st.header(":green[Sebo do Marcão]", divider="orange")
