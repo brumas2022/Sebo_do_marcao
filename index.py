@@ -80,12 +80,12 @@ if senha=="Musicas":
     st.sidebar.write("HC3")
     #st.sidebar.audio(audio_bytes, format='audio/mpeg') #displaying the audio
     st.sidebar.audio('06-Hc3.mp3',format='audio/mpeg')
-
+    chico = "https://hdhvkseneldllvnlvpgc.supabase.co/storage/v1/object/sign/songs/Chico%20Buarque%20-%20Vai%20Passar.mp3?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzb25ncy9DaGljbyBCdWFycXVlIC0gVmFpIFBhc3Nhci5tcDMiLCJpYXQiOjE3MzEwOTM1ODksImV4cCI6MTczMTY5ODM4OX0.HpkFzg_DiS4OGcXeq5OdHT_lJz5CjXkYD2Uw4E8vLrI&t=2024-11-08T19%3A20%3A21.079Z'
     #audio1_file = open('https://hdhvkseneldllvnlvpgc.supabase.co/storage/v1/object/sign/PMSB-tabelas/Tabela5-10/01-Cantares.mp3?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJQTVNCLXRhYmVsYXMvVGFiZWxhNS0xMC8wMS1DYW50YXJlcy5tcDMiLCJpYXQiOjE3MzA5MjIxMDYsImV4cCI6MTczMTUyNjkwNn0.E7gXHtius5OTuz6slQvzV3B367HdPwW86WChKAE_Jpw&t=2024-11-06T19%3A42%3A18.206Z', 'rb')
     #audio1_bytes = audio1_file.read()
     st.sidebar.audio('https://hdhvkseneldllvnlvpgc.supabase.co/storage/v1/object/sign/PMSB-tabelas/Tabela5-10/01-Cantares.mp3?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJQTVNCLXRhYmVsYXMvVGFiZWxhNS0xMC8wMS1DYW50YXJlcy5tcDMiLCJpYXQiOjE3MzA5MjIxMDYsImV4cCI6MTczMTUyNjkwNn0.E7gXHtius5OTuz6slQvzV3B367HdPwW86WChKAE_Jpw&t=2024-11-06T19%3A42%3A18.206Z', format='audio/mpeg')
     st.sidebar.audio('https://hdhvkseneldllvnlvpgc.supabase.co/storage/v1/object/sign/PMSB-tabelas/Tabela5-10/20%20-%20Surfin%20Bird.mp3?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJQTVNCLXRhYmVsYXMvVGFiZWxhNS0xMC8yMCAtIFN1cmZpbiBCaXJkLm1wMyIsImlhdCI6MTczMDkyMzQ4OCwiZXhwIjoxNzMxNTI4Mjg4fQ.mNNoIYEqdplTWToCSJA624OHxBpro9n4yULJUxtcOgc&t=2024-11-06T20%3A05%3A19.937Z', format='audio/mpeg')
-
+    st.sidebar.audio(chico, format='audio/mpeg')
 
 st.header(":green[Sebo do Marcão]", divider="orange")
 st.markdown("Tente fazer coisas diferentes para melhorar o seu dia :musical_note:")
