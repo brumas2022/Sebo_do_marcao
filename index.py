@@ -80,6 +80,8 @@ if senha=="Musicas":
     st.sidebar.write("HC3")
     #st.sidebar.audio(audio_bytes, format='audio/mpeg') #displaying the audio
     st.sidebar.audio('06-Hc3.mp3',format='audio/mpeg')
+    surfin = 'https://hdhvkseneldllvnlvpgc.supabase.co/storage/v1/object/sign/PMSB-tabelas/20%20-%20Surfin%20Bird.mp3?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJQTVNCLXRhYmVsYXMvMjAgLSBTdXJmaW4gQmlyZC5tcDMiLCJpYXQiOjE3MzE2MTUyODgsImV4cCI6MTczNDIwNzI4OH0.uYKjP4pROOOZmUdHR1SppybMrYbxAKYv5T33xWf8ifE&t=2024-11-14T20%3A15%3A22.667Z'
+    cantares = 'https://hdhvkseneldllvnlvpgc.supabase.co/storage/v1/object/sign/songs/01-Cantares.mp3?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzb25ncy8wMS1DYW50YXJlcy5tcDMiLCJpYXQiOjE3MzE2MTUwMzcsImV4cCI6MTczNDIwNzAzN30.QYl4S-YOaxFR-ADZfOm9i9-sgWMF6ku9c54nHToNhA0&t=2024-11-14T20%3A11%3A11.889Z'
     chico = 'https://hdhvkseneldllvnlvpgc.supabase.co/storage/v1/object/sign/songs/Chico%20Buarque%20-%20Vai%20Passar.mp3?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzb25ncy9DaGljbyBCdWFycXVlIC0gVmFpIFBhc3Nhci5tcDMiLCJpYXQiOjE3MzEwOTM1ODksImV4cCI6MTczMTY5ODM4OX0.HpkFzg_DiS4OGcXeq5OdHT_lJz5CjXkYD2Uw4E8vLrI&t=2024-11-08T19%3A20%3A21.079Z'
     abreu = 'https://hdhvkseneldllvnlvpgc.supabase.co/storage/v1/object/sign/songs/Fernanda%20Abreu%20-%20Katia%20Flavia.mp3?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzb25ncy9GZXJuYW5kYSBBYnJldSAtIEthdGlhIEZsYXZpYS5tcDMiLCJpYXQiOjE3MzEwOTM3ODUsImV4cCI6MTczMTY5ODU4NX0.tHCZKrnSR_xhLnoBaUxJiOvkXqdFWB_nIni-2jUjtSw&t=2024-11-08T19%3A23%3A36.944Z'
     bohe = 'https://hdhvkseneldllvnlvpgc.supabase.co/storage/v1/object/sign/songs/Queen%20-%20Bohemian%20Rhapsody.mp3?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzb25ncy9RdWVlbiAtIEJvaGVtaWFuIFJoYXBzb2R5Lm1wMyIsImlhdCI6MTczMTA5MzgzMSwiZXhwIjoxNzMxNjk4NjMxfQ.7fO9M8yi6-G-ZoqcBrH6cCBFKiannEiDS1n9zEpF30Q&t=2024-11-08T19%3A24%3A23.095Z'
@@ -87,8 +89,8 @@ if senha=="Musicas":
     
     #audio1_file = open('https://hdhvkseneldllvnlvpgc.supabase.co/storage/v1/object/sign/PMSB-tabelas/Tabela5-10/01-Cantares.mp3?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJQTVNCLXRhYmVsYXMvVGFiZWxhNS0xMC8wMS1DYW50YXJlcy5tcDMiLCJpYXQiOjE3MzA5MjIxMDYsImV4cCI6MTczMTUyNjkwNn0.E7gXHtius5OTuz6slQvzV3B367HdPwW86WChKAE_Jpw&t=2024-11-06T19%3A42%3A18.206Z', 'rb')
     #audio1_bytes = audio1_file.read()
-    st.sidebar.audio('https://hdhvkseneldllvnlvpgc.supabase.co/storage/v1/object/sign/PMSB-tabelas/Tabela5-10/01-Cantares.mp3?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJQTVNCLXRhYmVsYXMvVGFiZWxhNS0xMC8wMS1DYW50YXJlcy5tcDMiLCJpYXQiOjE3MzA5MjIxMDYsImV4cCI6MTczMTUyNjkwNn0.E7gXHtius5OTuz6slQvzV3B367HdPwW86WChKAE_Jpw&t=2024-11-06T19%3A42%3A18.206Z', format='audio/mpeg')
-    st.sidebar.audio('https://hdhvkseneldllvnlvpgc.supabase.co/storage/v1/object/sign/PMSB-tabelas/Tabela5-10/20%20-%20Surfin%20Bird.mp3?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJQTVNCLXRhYmVsYXMvVGFiZWxhNS0xMC8yMCAtIFN1cmZpbiBCaXJkLm1wMyIsImlhdCI6MTczMDkyMzQ4OCwiZXhwIjoxNzMxNTI4Mjg4fQ.mNNoIYEqdplTWToCSJA624OHxBpro9n4yULJUxtcOgc&t=2024-11-06T20%3A05%3A19.937Z', format='audio/mpeg')
+    st.sidebar.audio(cantares, format='audio/mpeg')
+    st.sidebar.audio(surfin, format='audio/mpeg')
     st.sidebar.audio(chico, format='audio/mpeg')
     st.sidebar.audio(abreu, format='audio/mpeg')
     st.sidebar.audio(bohe, format='audio/mpeg')
