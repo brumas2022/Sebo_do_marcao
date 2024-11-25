@@ -38,7 +38,7 @@ def bot_telegram():
               /adocao
               /amigo"""
         bot.reply_to(mensagem, texto)
-     bot.polling()    
+      
     
 
 
