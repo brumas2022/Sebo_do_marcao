@@ -5,41 +5,7 @@ import os
 from dotenv import load_dotenv
 from st_pages import show_pages_from_config, add_page_title
 
-def bot_telegram():
-    # Carregando as variáveis de ambiente do arquivo .env
-    load_dotenv()
-    # Acessando a variável de ambiente API_KEY
-    CHAVE_API = os.getenv("CHAVE_API")
-    st.info("Este site aciona o bot do telegram sobre os animais")
-    a=st.text_input("Qual é a senha?")
-    b=os.getenv("senha")
-    if a==b:
-       st.write("Vc acertou!!!")
-   
-    escolha=st.text_input("Digite sua mensagem")
-    bot = telebot.TeleBot(CHAVE_API)  
-    bot.send_message(820304760, escolha)
 
-    @bot.message_hanlder(commands=['caes'])
-    def caes(mensagem):
-            st.write("Ele respondeu caes")
-            bot.send_message(820304760, "deu certo")
-    
-    def verificar(mensagem):
-        return True
-
-    @bot.message_handler(func=verificar)
-    def responder(mensagem):
-        texto="""Escolha uma das opçoes:
-              /caes
-              /gatos
-              /lembretes
-              /como_ajudar
-              /adocao
-              /amigo"""
-        bot.reply_to(mensagem, texto)
-      
-    
 
 
 senha = st.sidebar.selectbox(
@@ -112,7 +78,7 @@ cols[3].link_button("A TRIBUNA", "https://www.atribunamt.com.br", use_container_
 cols[4].link_button("CATRACA", "https://catracalivre.com.br/", use_container_width=True)
 
 
-a = st.selectbox("Escolha a opção desejada",("Mensagem para o Marcao", "Desejar bom dia ao Marcao", "Desejar boa noite ao Marcao", "Telegram"))
+a = st.selectbox("Escolha a opção desejada",("Mensagem para o Marcao", "Desejar bom dia ao Marcao", "Desejar boa noite ao Marcao"))
 if a == "Mensagem para o Marcao":
   nome = st.text_input("Digite seu nome")
   prompt = st.chat_input("Say something")
@@ -128,7 +94,7 @@ elif a ==  "Desejar boa noite ao Marcao":
   st.markdown("Espero estar melhor no outro dia....boa noite")
   st.snow()
   st.write("---")
-elif a == "Telegram":
-  bot_telegram()  
+
+  
   
   
