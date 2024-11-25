@@ -52,6 +52,7 @@ if senha=="Musicas":
     abreu = 'https://hdhvkseneldllvnlvpgc.supabase.co/storage/v1/object/sign/songs/Fernanda%20Abreu%20-%20Katia%20Flavia.mp3?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzb25ncy9GZXJuYW5kYSBBYnJldSAtIEthdGlhIEZsYXZpYS5tcDMiLCJpYXQiOjE3MzI1NjExMTcsImV4cCI6MTc2NDA5NzExN30.5FNWk3kCm-KwrmKrPMhE7zVe4BvymEwEzLHlMt6j6Vs&t=2024-11-25T18%3A58%3A38.225Z'
     bohe = 'https://hdhvkseneldllvnlvpgc.supabase.co/storage/v1/object/sign/songs/Queen%20-%20Bohemian%20Rhapsody.mp3?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzb25ncy9RdWVlbiAtIEJvaGVtaWFuIFJoYXBzb2R5Lm1wMyIsImlhdCI6MTczMjU2MTE1MSwiZXhwIjoxNzY0MDk3MTUxfQ.fmpVTG9ZiXvLu7J9-0ztlYaJCRkYX7YUFJOEroY0sWc&t=2024-11-25T18%3A59%3A12.014Z'
     pedro = 'https://hdhvkseneldllvnlvpgc.supabase.co/storage/v1/object/sign/songs/Raul%20Seixas%20-%20Meu%20Amigo%20Pedro.mp3?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzb25ncy9SYXVsIFNlaXhhcyAtIE1ldSBBbWlnbyBQZWRyby5tcDMiLCJpYXQiOjE3MzI1NjExNzYsImV4cCI6MTc2NDA5NzE3Nn0.BWtQzY4eZiPUBttNE9xCbgGm8OHck8g9xcZZkJfWqrM&t=2024-11-25T18%3A59%3A36.950Z'
+    zegeraldo = 'https://hdhvkseneldllvnlvpgc.supabase.co/storage/v1/object/sign/songs/Ze%20Geraldo%20-%20Meiga%20Senhorita.mp3?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzb25ncy9aZSBHZXJhbGRvIC0gTWVpZ2EgU2VuaG9yaXRhLm1wMyIsImlhdCI6MTczMjU2NTk4MywiZXhwIjoxNzY0MTAxOTgzfQ.Ifu6e3bbQA7SPz7403G7JoQ036C1_tHeOSEJvIbTkYg&t=2024-11-25T20%3A19%3A43.675Z' 
     
     #audio1_file = open('https://hdhvkseneldllvnlvpgc.supabase.co/storage/v1/object/sign/PMSB-tabelas/Tabela5-10/01-Cantares.mp3?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJQTVNCLXRhYmVsYXMvVGFiZWxhNS0xMC8wMS1DYW50YXJlcy5tcDMiLCJpYXQiOjE3MzA5MjIxMDYsImV4cCI6MTczMTUyNjkwNn0.E7gXHtius5OTuz6slQvzV3B367HdPwW86WChKAE_Jpw&t=2024-11-06T19%3A42%3A18.206Z', 'rb')
     #audio1_bytes = audio1_file.read()
@@ -61,6 +62,7 @@ if senha=="Musicas":
     st.sidebar.audio(abreu, format='audio/mpeg')
     st.sidebar.audio(bohe, format='audio/mpeg')
     st.sidebar.audio(pedro, format='audio/mpeg')
+    st.sidebar.audio(zegeraldo, format='audio/mpeg')
 
 st.header(":green[Sebo do Marcão]", divider="orange")
 st.markdown("Tente fazer coisas diferentes para melhorar o seu dia :musical_note:")
