@@ -12,10 +12,13 @@ CHAVE_API = os.getenv("CHAVE_API")
 
 st.title("Este site aciona o bot do telegram sobre os animais")
 
-a=st.text_input("Qual é a senha?")
-b=os.getenv("senha")
-if a==b:
-   st.write("Vc acertou!!!")
+
+form = st.form(key="Caes", clear_on_submit=True)
+with form:
+   a=st.text_input("Qual é a senha?")
+   b=os.getenv("senha")
+   if a==b:
+      st.write("Vc acertou!!!")
    
 escolha=st.text_input("Digite sua mensagem")
 
