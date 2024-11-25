@@ -16,7 +16,7 @@ st.title("Este site aciona o bot do telegram sobre os animais")
 form = st.form(key="Caes", clear_on_submit=True)
 with form:
    email = st.text_input("Digite seum email")
-   a=st.text_input("Entre com a senha", )
+   a=st.text_input("Entre com a senha", type"password" )
    b=os.getenv("senha")
    botao_submit = form.form_submit_button("Confirma!")
    if a==b:
