@@ -13,7 +13,7 @@ senha = st.sidebar.selectbox(
     ("Sheets", "Programas", "Cifras", "Musicas")
 )
 if senha == "Sheets":
-  st.sidebar.link_button("Controle de Ponto","https://docs.google.com/spreadsheets/d/1CcE0dc60ezKeIVTOlXOoM42UBDve46HI4GTSxIs_qY0/edit?gid=577486192#gid=577486192")
+  st.sidebar.link_button("Controle de Ponto","https://docs.google.com/spreadsheets/d/1CcE0dc60ezKeIVTOlXOoM42UBDve46HI4GTSxIs_qY0/edit?gid=1182905761#gid=1182905761")
 
 if senha=="Programas":
     st.sidebar.link_button("Memorando SANEAR", "https://comunicasanear-avcnrpqesbpzeg2ecsmuun.streamlit.app/", use_container_width=True)
