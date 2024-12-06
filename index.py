@@ -72,12 +72,13 @@ st.image("crie_uma_imagem_de_um_violao_inteirona_diagonal_ladeado_por_livros_e_n
 
 
 
-cols = st.columns((1,1,1,1,1))
+cols = st.columns((1,1,1,1,1,1))
 cols[0].link_button("PCI", "https://www.pciconcursos.com.br/", use_container_width=True)
 cols[1].link_button("SANEAR", "https://www.sanearmt.com.br", use_container_width=True)
 cols[2].link_button("PREFEITURA", "http://www.rondonopolis.mt.gov.br", use_container_width=True)
 cols[3].link_button("A TRIBUNA", "https://www.atribunamt.com.br", use_container_width=True)
 cols[4].link_button("CATRACA", "https://catracalivre.com.br/", use_container_width=True)
+cols[5].link_button("DOU", "https://www.in.gov.br/servicos/diario-oficial-da-uniao", use_container_width=True)
 
 
 a = st.selectbox("Escolha a opção desejada",("Mensagem para o Marcao", "Desejar bom dia ao Marcao", "Desejar boa noite ao Marcao"))
