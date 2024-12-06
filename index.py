@@ -72,7 +72,7 @@ st.image("crie_uma_imagem_de_um_violao_inteirona_diagonal_ladeado_por_livros_e_n
 
 
 
-cols = st.columns((0.75,1,1,1,1,1))
+cols = st.columns((0.75,1,1.25,1,1,1))
 cols[0].link_button("PCI", "https://www.pciconcursos.com.br/", use_container_width=True)
 cols[1].link_button("SANEAR", "https://www.sanearmt.com.br", use_container_width=True)
 cols[2].link_button("PREFEITURA", "http://www.rondonopolis.mt.gov.br", use_container_width=True)
