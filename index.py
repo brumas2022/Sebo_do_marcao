@@ -13,7 +13,7 @@ senha = st.sidebar.selectbox(
     ("Sheets", "Programas", "Cifras", "Musicas")
 )
 if senha == "Sheets":
-   caminho = "https://docs.google.com/spreadsheets/d/1CcE0dc60ezKeIVTOlXOoM42UBDve46HI4GTSxIs_qY0/edit?gid=877445842#gid=877445842" 
+   caminho = "https://docs.google.com/spreadsheets/d/1CcE0dc60ezKeIVTOlXOoM42UBDve46HI4GTSxIs_qY0/edit?gid=838208374#gid=838208374" 
    st.sidebar.link_button("Controle de Ponto", caminho)
 
 if senha=="Programas":
