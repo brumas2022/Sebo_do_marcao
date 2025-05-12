@@ -4,6 +4,7 @@ import psycopg2
 import os
 from dotenv import load_dotenv
 from st_pages import show_pages_from_config, add_page_title
+import requests
 
 
 
