@@ -67,7 +67,11 @@ if senha=="Musicas":
     st.sidebar.audio(zegeraldo, format='audio/mpeg')
 
 st.header(":green[Sebo do Marcão]", divider="orange")
-st.markdown("Tente fazer coisas diferentes para melhorar o seu dia :musical_note:")
+link_api="https://api.adviceslip.com/advice"
+resposta = requests.get(link_api)
+dados_requisicao = resposta.json()
+conselho = dados_requisicao['slip']['advice']
+st.markdown(conselho)
 st.write("---")
 #st.image("IMG_20220616_220024.jpg")
 st.image("crie_uma_imagem_de_um_violao_inteirona_diagonal_ladeado_por_livros_e_notas_musicais_png.png")
