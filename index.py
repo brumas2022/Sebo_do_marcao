@@ -11,11 +11,11 @@ import requests
 
 senha = st.sidebar.selectbox(
     "Escolha um autor para continuar",
-    ("Sheets", "Programas", "Cifras", "Musicas")
+    ("Appsmith", "Programas", "Cifras", "Musicas")
 )
-if senha == "Sheets":
-   caminho = "https://docs.google.com/spreadsheets/d/1CcE0dc60ezKeIVTOlXOoM42UBDve46HI4GTSxIs_qY0/edit?gid=742760646#gid=742760646" 
-   st.sidebar.link_button("Controle de Ponto", caminho)
+if senha == "Appsmith":
+   caminho = "https://sanear.appsmith.com" 
+   st.sidebar.link_button("Cadastro de Atividades", caminho)
 
 if senha=="Programas":
     st.sidebar.link_button("Memorando SANEAR", "https://comunicasanear-avcnrpqesbpzeg2ecsmuun.streamlit.app/", use_container_width=True)
