@@ -74,8 +74,8 @@ conselho = dados_requisicao['slip']['advice']
 st.markdown(conselho)
 st.write("---")
 #st.image("IMG_20220616_220024.jpg")
-st.image("crie_uma_imagem_de_um_violao_inteirona_diagonal_ladeado_por_livros_e_notas_musicais_png.png")
-
+#st.image("crie_uma_imagem_de_um_violao_inteirona_diagonal_ladeado_por_livros_e_notas_musicais_png.png")
+st.image("a_colorful_image_o_image_.jpg")
 
 
 cols = st.columns((0.75,1,1.25,1,1,1))
