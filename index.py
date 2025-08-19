@@ -23,7 +23,7 @@ if senha=="Programas":
     st.sidebar.link_button("Galeria de fotos", "https://galeria.streamlit.app", use_container_width=True)
     st.sidebar.link_button("Controle de Estoque", "https://estoque1.streamlit.app", use_container_width=True)
     st.sidebar.link_button("Video do Youtube", "https://www.youtube.com/watch?v=JnxCIRxt3kQ&t=19s", use_container_width=True)
-    st.sidebar.link_button("Abertura SANEAR", "https://abertura.atreamlit.app", use_container_width=True)
+    st.sidebar.link_button("Abertura SANEAR", "https://abertura.streamlit.app", use_container_width=True)
     st.sidebar.link_button("Lojinha", "https://loja1dosebo.streamlit.app/", use_container_width=True)
     st.sidebar.link_button("Aciona Telegram", "https://sebodomarcao-g4cnpbtuc8aclncvnvzr4e.streamlit.app/", use_container_width=True)
     st.sidebar.link_button("Sobre museu Rosa Bororo - fonte: ATribunamt", "https://www.atribunamt.com.br/opiniao-do-leitor/2024/05/entre-o-passado-e-o-futuro-o-papel-do-museu-rosa-bororo-na-historia-em-rondonopolis/", use_container_width=True)
